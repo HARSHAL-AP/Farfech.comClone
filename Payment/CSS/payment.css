@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+/* Navbar */
+#pNavbar{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(172, 172, 172);
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+}
+#checkouts{
+    width: 42%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-left: 25px;
+}
+#pHelp{
+    width: 42%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#webLogo{
+    width: 42%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#webLogo>img{
+    width: 30%;
+    height: 18px;
+    object-fit: fill;
+}
+#checkouts>img{
+    width: 13%;
+    height: 25px;
+    object-fit: fill;
+}
+
+/* inputs */
+
+#userDetails{
+    margin-left: 25px;
+}
+#nameSec, #city-state, #zip-phone{
+    display: flex;
+    gap: 15px;
+}
+label{
+    display: block;
+    margin-bottom: 6px;
+}
+#pFields{
+    width: 70%;
+}
+#userDetails{
+    width: 70%;
+    /* border: 1px solid blue; */
+}
+#pform{
+    width: 90%;
+    /* border: 1px solid  green; */
+    margin:15px auto;
+}
+#pform>h2{
+    font-weight: 200;
+    color: rgb(19, 18, 18);
+    padding: 20px 0;
+}
+#pform>div{
+    margin-top: 20px;
+}
+#nameSec>div, #city-state>div, #zip-phone>div{
+    width: 50%;
+}
+#pName, #lastName, #pCity, #pState, #pZip, #pPhone, #pCountry,#pAddress>div>input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(192, 190, 190);
+}
+#pAddress>div>input{
+    margin-top: 12px;
+}
+#chkInput{
+   margin-right: 15px;
+   width: 18px;
+   height: 18px;
+   vertical-align: middle;
+}
+#checkbox>label{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* summery box */
+#pSummary{
+    width: 20%;
+    height: 300px;
+    /* border: 1px solid purple; */
+    margin: 50px 35px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
+}
+
+#pSummary>h2{
+    font-weight: 200;
+    color: rgb(19, 18, 18);
+    padding: 0 0 20px 6px;
+}
+#payContainer{
+    display: flex;
+    justify-content: space-between;
+}
+#pDelivery, #pTotal, #r1, #pLeft{
+    display: flex;
+    justify-content: space-between;
+}
+#btnBox{
+    display: flex;
+    justify-content: center;
+}
+#save-btn{
+    margin-top: 30px;
+    background-color: rgb(65, 64, 64);
+    color: white;
+    width: 100%;
+    height:45px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+}
+#pDelivery{
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+#pTotal{
+    margin-top: 20px;
+}
+#pTotal>div>p:nth-child(1),#pri>p:last-child{
+    text-align: end;
+}
+
+
+/* footer */
+
+#pFooter{
+    height: 80px;
+    margin-top: 70px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#pUserName{
+    display: flex;
+    margin-left: 20px;
+}
+#pUserName>a{
+    color: white;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
