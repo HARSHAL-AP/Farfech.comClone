@@ -1,0 +1,141 @@
+<!-- Welcome to payment page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarFech - p1 Delivery Page</title>
+    <link rel="stylesheet" href="./CSS/delivery.css">
+    <link rel="stylesheet" href="./CSS/navbarFooter.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+  
+</head>
+<body>
+    <!--part 1- Payment navbar  -->
+    <nav id="pNavbar">
+
+    </nav>
+
+    <!--Row 2= User detail fields  -->
+    <div id="payContainer">
+        <div id="pFields">
+            <!-- progress baar -->
+            <div id="prog-bar">
+                <!-- <img src="./Assets/box_tracker_black.svg" alt=""> -->
+                <span><i class="fa-solid fa-box-archive"></i></span>
+                <div>
+                </div>
+            </div>
+
+            <!-- inputs -->
+            <div id="userDetails">
+                <form action="#" id="pform">
+                    <h2>Add your delivery address</h2>
+                    <p>* Required fields</p>
+                    <div id="nameSec">
+                        <div>
+                            <label for="pName">First Name *</label>
+                            <input required type="text" id="pName">
+                        </div>
+                        <div>
+                            <label for="lastName">Last name *</label>
+                            <input required type="text" id="lastName">
+                        </div>
+                    </div>
+                    <!-- countries show -- dropDouwn has to be done  here-->
+                    <div id="pCountries">
+                        <label for="pCountry">Country / region *</label>
+                        <input required type="text" id="pCountry">
+                    </div>
+
+                    <!-- addressess -->
+                    <div id="pAddress">
+                        <label for=".add1">Address *</label>
+                        <div>
+                            <input required type="text" class="add1">
+                        </div>
+                        <div>
+                            <input type="text" class="add1">
+                        </div>
+                        <div>
+                            Add another line
+                        </div>
+                    </div>
+                    <div id="city-state">
+                        <div>
+                            <label for="pCity">City *</label>
+                            <input required type="text" id="pCity">
+                        </div>
+                        <div>
+                            <label for="pState">State</label>
+                            <input type="text" id="pState">
+                        </div>
+                    </div>
+                    <div id="zip-phone">
+                        <div>
+                            <label for="pZip">Postal or zip code *</label>
+                            <input required type="number" id="pZip">
+                        </div>
+                        <div>
+                            <label for="pPhone">Phone *</label>
+                            <input required type="tel" id="pPhone">
+                        </div>
+                    </div>
+                    <div id="checkbox">
+                        <label for="chkInput">
+                            <input type="checkbox" id="chkInput" name="billingAdd">Use as billing address
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- summary -->
+        <div id="pSummary">
+            <h2>Summary</h2>
+            <!--This entire part should be dynamic-->
+            <div id="pLeft">
+                <div>
+                    <div id="r1">
+                        <img src="#">
+                        <p>last 1 left</p>
+                    </div>
+                </div>
+                <div id="pri">
+                    <p>Collina Strada</p>
+                    <p>$206.00</p>
+                </div>
+            </div>
+            <div id="pDelivery">
+                <p>Delivery</p>
+                <p>$24.00</p>
+            </div>
+            <div id="pTotal">
+                <p>Total</p>
+                <div>
+                    <p>USD $230.00</p>
+                    <p>Import duties included</p>
+                </div>
+            </div>
+            <div id="btnBox">
+                <button id="save-btn">Save and Continue</button>
+            </div>
+        </div>
+
+    </div>
+    
+    <!--Payment footer == exported  -->
+
+    <footer id="pFooter">
+        
+    </footer>
+
+
+</body>
+</html>
+<script type="module" src="./JavaScripts/delivery.js"></script>

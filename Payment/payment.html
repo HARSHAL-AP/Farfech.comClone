@@ -1,40 +1,24 @@
-<!-- Welcome to payment page -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarFech - Payment Page</title>
+    <title>FarFech - p2  Payment</title>
+    <link rel="stylesheet" href="./CSS/navbarFooter.css">
+    <link rel="stylesheet" href="./CSS/delivery.css">
     <link rel="stylesheet" href="./CSS/payment.css">
-    <link
-    rel="stylesheet"
+
+    <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous
-    referrerpolicy="no-referrer"
-  />
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
 </head>
 <body>
-    <!--part 1- Payment navbar  -->
     <nav id="pNavbar">
-        <div id="checkouts">
-            <span><i class="fa-solid fa-lock"></i></span>
-            <h4>Secure Checkout</h4>
-            <img src="./Assets/degicert.png" alt="degicert">
-        </div>
-        <div id="webLogo">
-            <img src="./Assets/farfetch2.png" alt="farfetch">
-        </div>
-        <div id="pHelp">
-            <h4>Need Help?</h4>
-            <span><i class="fa-solid fa-phone"></i></span>
-            <h4>(+44 (0) 20 3510 0670)</h4>
-        </div>
+        <!-- Exported -->
     </nav>
-
-    <!--Row 2= User detail fields  -->
     <div id="payContainer">
         <div id="pFields">
             <!-- progress baar -->
@@ -48,118 +32,80 @@
             <!-- inputs -->
             <div id="userDetails">
                 <form action="#" id="pform">
-                    <h2>Add your delivery address</h2>
-                    <p>* Required fields</p>
+                    <h2>Select your payment method</h2>
                     <div id="nameSec">
                         <div>
-                            <label for="pName">First Name *</label>
-                            <input required type="text" id="pName">
+                            <img src="https://cdn-static.farfetch-contents.com/assets/portal-checkout-web/v2-0-22165-382/Static/assets/images/payment-icons/payment_paypalexp.svg" alt="paypal">
                         </div>
                         <div>
-                            <label for="lastName">Last name *</label>
-                            <input required type="text" id="lastName">
+                            <i class="fa-regular fa-credit-card-blank"></i>
+                            <span>Debit or credit card</span>
                         </div>
                     </div>
-                    <!-- countries show -- dropDouwn has to be done  here-->
-                    <div id="pCountries">
-                        <label for="pCountry">Country / region *</label>
-                        <input required type="text" id="pCountry">
-                    </div>
-
-                    <!-- addressess -->
-                    <div id="pAddress">
-                        <label for=".add1">Address *</label>
-                        <div>
-                            <input required type="text" class="add1">
+                    <div id="card-container">
+                        <div id="pCountries">
+                            <label for="pCountry">Cardholder name</label>
+                            <input required type="text" id="pCountry">
                         </div>
-                        <div>
-                            <input type="text" class="add1">
+                        <div id="city-state">
+                            <div>
+                                <label for="pCity">Card number</label>
+                                <input required type="number" id="pCity">
+                            </div>
+                            <div>
+                                <label for="pState">Expiration date</label>
+                                <input required type="date" id="pState" placeholder="MM/YY">
+                            </div>
                         </div>
-                        <div>
-                            Add another line
+                        <div id="zip-phone">
+                            <div>
+                                <label for="pZip">Security code</label>
+                                <input required type="number" id="pZip">
+                            </div>
                         </div>
-                    </div>
-                    <div id="city-state">
-                        <div>
-                            <label for="pCity">City *</label>
-                            <input required type="text" id="pCity">
+                        <div id="checkbox">
+                            <label for="chkInput">
+                                <input type="checkbox" id="chkInput" name="billingAdd">Save payment details
+                            </label>
                         </div>
-                        <div>
-                            <label for="pState">State</label>
-                            <input type="text" id="pState">
+                        <div id="userAddBox">
+                            <h2>BILLING ADDRESS</h2>
+                            <!-- dynamic part -->
+                            <div id="billAdd">
+                                <div>username</div>
+                                <div>address</div>
+                                <div>country</div>
+                                <div><a href="#">Edit</a></div>
+                            </div>
                         </div>
-                    </div>
-                    <div id="zip-phone">
-                        <div>
-                            <label for="pZip">Postal or zip code *</label>
-                            <input required type="number" id="pZip">
-                        </div>
-                        <div>
-                            <label for="pPhone">Phone *</label>
-                            <input required type="tel" id="pPhone">
-                        </div>
-                    </div>
-                    <div id="checkbox">
-                        <label for="chkInput">
-                            <input type="checkbox" id="chkInput" name="billingAdd">Use as billing address
-                        </label>
                     </div>
                 </form>
             </div>
         </div>
         <!-- summary -->
         <div id="pSummary">
-            <h2>Summary</h2>
-            <!--This entire part should be dynamic-->
-            <div id="pLeft">
-                <div>
-                    <div id="r1">
-                        <img src="#">
-                        <p>last 1 left</p>
-                    </div>
-                </div>
-                <div id="pri">
-                    <p>Collina Strada</p>
-                    <p>$206.00</p>
-                </div>
+            <div id="pSBox">
+                <!-- Exported -->
             </div>
-            <div id="pDelivery">
-                <p>Delivery</p>
-                <p>$24.00</p>
-            </div>
-            <div id="pTotal">
-                <p>Total</p>
+           
+           <div id="promoBox">
+                <p>Insert your promo code</p>
                 <div>
-                    <p>USD $230.00</p>
-                    <p>Import duties included</p>
+                    <input id="promo-querry" type="text" placeholder="Enter promo code">
                 </div>
+                <p></p>
+            </div>
+            <div id="suggest">
+                <p>You can review and confirm your order in the next step</p>
             </div>
             <div id="btnBox">
                 <button id="save-btn">Save and Continue</button>
             </div>
         </div>
-
     </div>
-    
-    <!--Payment footer  -->
-
     <footer id="pFooter">
-        <div id="pUserName">
-            <!--show dynamic user name here,-->
-            <h4>User name (dynamic)</h4>
-            <a href="#">Sign out</a>
-        </div>
-        <div id="pHelp">
-            <!--show dynamic location here-->
-            <img src="#" alt="lg">
-            <p>IN/USD ($)</p>
-            <h4>Need Help?</h4>
-            <span><i class="fa-solid fa-phone"></i></span>
-            <h4>(+44 (0) 20 3510 0670)</h4>
-        </div>
+        <!-- exported -->
     </footer>
-
-
 </body>
 </html>
-<script></script>
+<script type="module" src="./JavaScripts/payment.js"></script>
