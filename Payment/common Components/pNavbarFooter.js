@@ -17,13 +17,11 @@ let pNavbar = () => {
 
 let pFooter=()=>{
     return `<div id="pUserName">
-        <!--show dynamic user name here,-->
-        <h4>User name (dynamic)</h4>
-        <a href="#">Sign out</a>
+        <h4 id="dynaUser">User name (dynamic)</h4>
+        <a href="login.html">Sign out</a>
     </div>
     <div id="pHelp">
-        <!--show dynamic location here-->
-        <img src="#" alt="lg">
+        <img id="countryLogo" src="./Assets/india logo.png" alt="lg">
         <p>IN/USD ($)</p>
         <h4>Need Help?</h4>
         <span><i class="fa-solid fa-phone"></i></span>

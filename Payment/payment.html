@@ -45,22 +45,22 @@
                     <div id="card-container">
                         <div id="pCountries">
                             <label for="pCountry">Cardholder name</label>
-                            <input required type="text" id="pCountry">
+                            <input required type="text" id="pCountry" class="card_name">
                         </div>
                         <div id="city-state">
                             <div>
                                 <label for="pCity">Card number</label>
-                                <input required type="number" id="pCity">
+                                <input required type="number" id="pCity" class="card_digits" maxlength="19" placeholder="**** **** **** ****">
                             </div>
                             <div>
                                 <label for="pState">Expiration date</label>
-                                <input required type="date" id="pState" placeholder="MM/YY">
+                                <input required type="text" id="pState" placeholder="MM/YY" maxlength="5" class="card_date">
                             </div>
                         </div>
                         <div id="zip-phone">
                             <div>
                                 <label for="pZip">Security code</label>
-                                <input required type="number" id="pZip">
+                                <input required type="number" id="pZip" class="cvv" maxlength="3" placeholder="***">
                             </div>
                         </div>
                         <div id="checkbox">
@@ -75,7 +75,8 @@
                                 <div>username</div>
                                 <div>address</div>
                                 <div>country</div>
-                                <div><a href="#">Edit</a></div>
+                                <!-- dynamic -->
+                                <div><a href="./delivery.html">Edit</a></div>
                             </div>
                         </div>
                     </div>
@@ -93,7 +94,6 @@
                 <div>
                     <input id="promo-querry" type="text" placeholder="Enter promo code">
                 </div>
-                <p></p>
             </div>
             <div id="suggest">
                 <p>You can review and confirm your order in the next step</p>

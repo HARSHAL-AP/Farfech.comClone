@@ -14,6 +14,9 @@
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"/>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
 </head>
 <body>
@@ -22,12 +25,11 @@
 
     </nav>
 
-    <!--Row 2= User detail fields  -->
+    <!--part 2= User detail fields  -->
     <div id="payContainer">
         <div id="pFields">
             <!-- progress baar -->
             <div id="prog-bar">
-                <!-- <img src="./Assets/box_tracker_black.svg" alt=""> -->
                 <span><i class="fa-solid fa-box-archive"></i></span>
                 <div>
                 </div>
@@ -35,92 +37,87 @@
 
             <!-- inputs -->
             <div id="userDetails">
-                <form action="#" id="pform">
+                <form id="pform">
                     <h2>Add your delivery address</h2>
                     <p>* Required fields</p>
                     <div id="nameSec">
                         <div>
                             <label for="pName">First Name *</label>
-                            <input required type="text" id="pName">
+                            <input type="text" id="pName" class="next" required tabindex="1">
+                            <div id="signal1"></div>
                         </div>
                         <div>
                             <label for="lastName">Last name *</label>
-                            <input required type="text" id="lastName">
+                            <input type="text" id="lastName" class="next" required tabindex="2">
+                            <div id="signal2"></div>
                         </div>
                     </div>
                     <!-- countries show -- dropDouwn has to be done  here-->
                     <div id="pCountries">
                         <label for="pCountry">Country / region *</label>
-                        <input required type="text" id="pCountry">
+                        <select id="pCountry" name="countries" class="next" required tabindex="3"></select>
+                        <div id="signal3"></div>
                     </div>
 
                     <!-- addressess -->
                     <div id="pAddress">
                         <label for=".add1">Address *</label>
                         <div>
-                            <input required type="text" class="add1">
+                            <input type="text"  id="addL1" class="next" required tabindex="4"> 
+                            <div id="signal4"></div>
                         </div>
                         <div>
-                            <input type="text" class="add1">
+                            <input type="text" id="addL2" class="next" tabindex="5" > 
                         </div>
-                        <div>
-                            Add another line
+                        <div id="add-line">
+                            <div>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span> Add another line</span>
+                            </div>
                         </div>
                     </div>
                     <div id="city-state">
                         <div>
                             <label for="pCity">City *</label>
-                            <input required type="text" id="pCity">
+                            <input type="text" id="pCity" class="next" required tabindex="6">
+                            <div id="signal5"></div>
                         </div>
                         <div>
                             <label for="pState">State</label>
-                            <input type="text" id="pState">
+                            <input type="text" id="pState" class="next" required tabindex="7">
+                            <div id="signal6"></div>
                         </div>
                     </div>
                     <div id="zip-phone">
                         <div>
                             <label for="pZip">Postal or zip code *</label>
-                            <input required type="number" id="pZip">
+                            <input type="number" id="pZip" class="next" required tabindex="8">
+                            <div id="signal7"></div>
                         </div>
                         <div>
                             <label for="pPhone">Phone *</label>
-                            <input required type="tel" id="pPhone">
+                            <input type="tel" id="pPhone" class="next" required tabindex="9">
+                            <div id="signal8"></div>
                         </div>
                     </div>
                     <div id="checkbox">
                         <label for="chkInput">
-                            <input type="checkbox" id="chkInput" name="billingAdd">Use as billing address
+                            <input type="checkbox" id="chkInput" name="Billing Address">Use as billing address
                         </label>
+                    </div>
+                    <div id="allDone">
+                        
                     </div>
                 </form>
             </div>
         </div>
+
         <!-- summary -->
         <div id="pSummary">
             <h2>Summary</h2>
-            <!--This entire part should be dynamic-->
-            <div id="pLeft">
-                <div>
-                    <div id="r1">
-                        <img src="#">
-                        <p>last 1 left</p>
-                    </div>
-                </div>
-                <div id="pri">
-                    <p>Collina Strada</p>
-                    <p>$206.00</p>
-                </div>
-            </div>
-            <div id="pDelivery">
-                <p>Delivery</p>
-                <p>$24.00</p>
-            </div>
-            <div id="pTotal">
-                <p>Total</p>
-                <div>
-                    <p>USD $230.00</p>
-                    <p>Import duties included</p>
-                </div>
+
+            <div id="pSBox">
+                <!-- Exported -->
             </div>
             <div id="btnBox">
                 <button id="save-btn">Save and Continue</button>
@@ -130,12 +127,14 @@
     </div>
     
     <!--Payment footer == exported  -->
-
     <footer id="pFooter">
         
     </footer>
 
-
 </body>
 </html>
+
 <script type="module" src="./JavaScripts/delivery.js"></script>
+
+  
+<script type="text/javascript" src="./JavaScripts/JQFunctions.js"></script>

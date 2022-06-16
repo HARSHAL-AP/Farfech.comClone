@@ -47,6 +47,13 @@ label{
     height: 50px;
     border: 1px solid rgb(192, 190, 190);
 }
+#add-line>div{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-top: 12px;
+    cursor: pointer;
+}
 #pAddress>div>input{
     margin-top: 12px;
 }
@@ -111,6 +118,34 @@ label{
 }
 #pTotal>div>p:nth-child(1),#pri>p:last-child{
     text-align: end;
+}
+
+#signal1, #signal2, #signal3, #signal4, #signal5,  #signal6,  #signal7,  #signal8{
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+#allDone{
+    color: green;
+}
+
+#prodImg{
+    width: 70px;
+    height: 70px;
+}
+
+#countryLogo{
+    width: 25px ;
+    height: 25px;
+    border-radius: 50%;
+}
+#pCountry{
+    padding: 15px;
+}
+#pCountry>option{
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
