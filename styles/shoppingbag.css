@@ -162,6 +162,7 @@ html {
 }
 ._b7db16 {
     box-sizing: border-box;
+    justify-content: space-between;
     position: relative;
     padding: 1.2rem;
     display: flex;
@@ -195,11 +196,14 @@ html {
    
 }
 .countryName{
+    
  font-family: var(--fontNormal);
     
     font-size: larger;
 }
 #productDetails{
+    
+    border: solid;
     padding-top: 14px;
     display: flex;
     width: 99%;
@@ -211,23 +215,31 @@ html {
 }
 #productDetails img{
     padding-top: 40px;
-  height: 159px; 
+  height: 70%; 
+  width: 100%;
     
     
 }
-#productdescription{
+/* #productdescription{
    width: 24%;
     
+} */
+#_996633{
+   border: solid;
+}
+#full_box{
+    display: flex;
 }
 #payout_box{
-    display: flex;
+  border: solid;
+
 }
 ._0f4c8f {
     padding-top: 1.2rem
 }
 
 ._0f4c8f:before {
-    content: "";
+    
     width: 100%;
     display: block;
     border-top: .1rem solid #b6b6b6
@@ -241,6 +253,9 @@ html {
     line-height: var(--lineHeightM);
     text-transform:var(--textTransformNone);letter-spacing:var(--letterSpacingNormal);
 
+}
+._1fe24a{
+    font-size: 15px;
 }
 #productDetails button{
     height: 28px;
@@ -258,11 +273,13 @@ html {
 #productDetails button :hover {
  opacity: 60%;
  color: rgb(74, 74, 74);
+ 
 }
 ._737011 {
     box-sizing: border-box;
     position: relative;
-    min-width: 10rem;
+    padding-left: 20%;
+    min-width: 20rem;
     padding: .4rem 2.4rem;
     overflow: hidden;
     display: inline-block;
@@ -272,10 +289,13 @@ html {
     line-height: 1.5;
     cursor: pointer;
     font-size: 1.4rem;
-    font-weight: 700
+    font-weight: 700;
+    transition: 0.5s;
+    transition-delay: 0.3s;
 }
 ._737011 :hover{
   opacity: 60%;
+  
 }
 
 
@@ -311,15 +331,14 @@ a._737011 {
 
 
 
+
 ._3dc882 {
-    position: absolute;
+    position: relative;
+    width: 20px;
+    height: 10px;
     top: 50%;
-    right: 1.2rem;
-    margin: auto;
-    padding: 0;
-    transform: translateY(-50%);
-    text-align: right;
-    transition: transform .3s
+    padding-left: 10px;
+   
 }
 
 ._b4693b
@@ -339,7 +358,15 @@ a._737011 {
     font-family: 'Farfetch Basis','Helvetica Neue',Arial,sans-serif;
     font-weight: bolder;
 }
-#quantity span a{
+._05226{
     text-decoration: none;
+    font-size: 14px;
+    text-decoration: underline;
+   
+    color: black;
+    transition: 0.3s;
+}
+._05226:hover{
+    opacity: 60%;
 }
 

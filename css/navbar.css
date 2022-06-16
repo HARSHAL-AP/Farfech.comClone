@@ -1,0 +1,265 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+#topadd {
+  height: 42px;
+  width: 100%;
+  background-color: #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#topadd > p > a {
+  text-decoration: underline;
+  font-size: 16px;
+}
+#navbar {
+  height: 128px;
+  width: 100%;
+  margin-top: auto;
+  background-color: #fff;
+  padding-top: 24px;
+  padding-bottom: 0px;
+  z-index: 1;
+}
+#navhead {
+  height: 45px;
+  width: 95%;
+  margin: auto;
+
+  display: flex;
+}
+
+#pagees {
+  height: 44px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#pagees > p {
+  height: 44px;
+  width: auto;
+  margin-right: 25px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+#mainlogo {
+  height: 44px;
+  width: 50%;
+
+  text-align: center;
+  font-size: 20px;
+}
+#profile {
+  height: 44px;
+  width: 25%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#profile > button {
+  height: 44px;
+  width: 44px;
+  background-color: #fff;
+  border: 0px;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#flag {
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+}
+#navsearch {
+  height: 50px;
+  width: 95%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 0px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  height: 150px;
+  width: 100%;
+  background-color: #fefefe;
+  margin: auto;
+}
+.close {
+  color: #000000;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  left: 95%;
+}
+#searchpro {
+  padding-left: 15px;
+}
+#mainsearchbutton {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 74%;
+  background-color: #fff;
+  color: #545353;
+  border: 0px;
+  cursor: pointer;
+}
+.logobox {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+}
+.sirlogo {
+  height: 44px;
+  width: 50%;
+  margin: auto;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 20px;
+}
+.serlogo {
+  height: 44px;
+  width: 60%;
+  margin: auto;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+.serlogo > input {
+  height: 44px;
+  width: 100%;
+}
+#navsearch > div {
+  height: 50px;
+  width: 28%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+#searchbar {
+  height: 50px;
+  width: 70%;
+  padding-left: 10px;
+  outline: none;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 5px;
+  border-color: rgb(148, 145, 145);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}
+#searchbutn {
+  position: absolute;
+  right: 10px;
+
+  border: none;
+  top: 10px;
+  height: 25px;
+  cursor: pointer;
+  color: rgb(45, 43, 43);
+  background-color: #fff;
+  font-size: 16px;
+}
+#bot {
+  height: 400px;
+  width: 100%;
+  margin-top: 100px;
+  background-color: #222222;
+}
+#footer {
+
+  margin-bottom: 0px;
+  height: 400px;
+  width: 95%;
+  margin: auto;
+  background-color: #222222;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  color: #fff;
+}
+.fott {
+  background-color: #222222;
+}
+.appios {
+  margin-left: 10px;
+  margin-top: 25px;
+  font-size: 17px;
+}
+#socialmediaicon {
+  height: 44px;
+  width: 100%;
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#socialmediaicon > button {
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+  font-size: 25px;
+  background-color: #222222;
+  color: #fff;
+  border: 0px;
+}
+.servisec {
+  height: 100%;
+  width: 50%;
+  background-color: #222222;
+}
+#fottt {
+  display: flex;
+}
+.servisec > li {
+  list-style: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+#bottom {
+  height: 50px;
+  width: 100%;
+  background-color: #222222;
+  color: #fff;
+}
+#bottom > div {
+  height: 30%;
+  width: 95%;
+  margin: auto;
+}
+#bottom > div > p {
+  font-size: 13px;
+}
