@@ -1,0 +1,94 @@
+#one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px; 
+    width: 97%;
+    margin-bottom: 50px;
+}
+
+#one>div{
+    margin: auto;
+ 
+    text-align: center;
+    font-size: 35px;
+    cursor: pointer;
+}
+#one>div>h6{
+    font-weight: lighter;
+    /* margin-top: -200px; */
+    padding: 3%;
+    /* margin-bottom: -40px; */
+}
+#one>div>button{
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+   padding: 10px;
+   background-color: white;
+   cursor: pointer;
+  
+}
+#one>div>button:hover{
+    background-color: rgb(241, 231, 231);
+}
+#ring{
+    width: 700px;
+    height: 700px;
+    margin-top: -180px;
+}
+#era{
+    width: 600px;
+}
+h2{
+    text-align: center;
+}
+#newin{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px;
+}
+#newin>div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+#newin>div>button{
+background-color: rgb(244, 238, 238);
+border: 0ch;
+margin-top: 10px;
+margin-left: 90%;
+cursor: pointer;
+}
+#newin>div>button:hover{
+    color: antiquewhite;
+    background-color: black;
+}
+
+#newin>div>img{
+    width: 350px;
+    background-color:rgb(231, 225, 225); 
+}
+#newin>div>p{
+    margin-left:20px ;
+    /* margin-bottom: -15px; */
+}
+#newin>div>p:nth-child(1){
+color: rgb(161, 38, 38);
+/* margin-bottom: -50px; */
+}
+#newin>div>h4{
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    font-size: larger;
+}
+#newinbutton{
+    margin-left: 45%;
+    font-size: 30px;
+    padding: 9px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}

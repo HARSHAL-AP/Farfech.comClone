@@ -1,7 +1,7 @@
 function navbar(){
 return ` <div id="navhead">
 <div id="pagees">
-  <p><a>Women</a></p>
+  <p><a href="womenpage.html">women</a></p>
   <p><a>Men</a></p>
   <p><a>Kids</a></p>
 </div>
