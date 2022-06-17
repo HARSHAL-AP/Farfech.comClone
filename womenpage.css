@@ -5,6 +5,7 @@
     gap: 10px; 
     width: 97%;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 #one>div{
@@ -79,8 +80,8 @@ color: rgb(161, 38, 38);
 }
 #newin>div>h4{
     margin-left: 20px;
-    margin-top: -20px;
-    margin-bottom: -20px;
+    /* margin-top: -20px; */
+    /* margin-bottom: -20px; */
     font-size: larger;
 }
 #newinbutton{

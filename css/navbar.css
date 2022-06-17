@@ -261,3 +261,9 @@
 #bottom > div > p {
   font-size: 13px;
 }
+#subnav{
+  display: flex;
+  gap: 30px;
+  margin-left: 20px;
+  
+}

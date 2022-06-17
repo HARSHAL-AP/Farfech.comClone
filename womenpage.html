@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Women Farfetch-INDIA</title>
     <link rel="stylesheet" href="womenpage.css">
+    <link rel="stylesheet" href="/css/navbar.css">
 </head>
 <body>
-    <div id="navbar"></div>
-
+    <div id="topadd"></div>
+    <div id="navbarwomen"></div>
+   
     <div id="one">
         <img src="https://cdn-static.farfetch-contents.com/cms-cm/in/media/2247770/data/a11b74d71d5abd74b65f8adbe785056a.png?ratio=1x1_messaging-side&minWidth=637" 
             alt="offer image">
@@ -96,8 +98,16 @@
         <a href="">Shop Courbet</a></div>
        
     </div>
-    <div id="bot"></div>
+    <div id="bottom"></div>
     
 </body>
 </html>
-<script src="/components/navbar.js" type="module"></script>
+<script type="module">
+    import {navbar,fotter} from "./components/navbar.js"
+    document.getElementById("bottom").innerHTML=fotter();
+</script>
+
+<script type="module">
+    import {navbar} from "./components/womennavbar.js"
+    document.getElementById("navbarwomen").innerHTML=navbar();
+</script>
