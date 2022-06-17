@@ -22,18 +22,29 @@ let arr =[
 
 
  console.log(arr.length)
+
+
  let container = document.getElementById("payout_box")
  if(arr.length >= 1) {
    let mrp = 0;
+   
+
 
 arr.forEach(function(el){
-    let qnt = document.getElementById("qamount")
+  
+  
+   
+    
+
+//  function update() {
+//     console.log('Updating...');
+// }
     
     let image=el.image
     let name = el.name
     let price = el.price
     let desc = el.desc
-    mrp+=price*qnt;
+   
 
 let div = document.createElement("div")
 div.id="_996633"
@@ -72,20 +83,22 @@ div.innerHTML = `<div id="cartitems">
     <div class="quantity">
         <p>Size</p>
         <span>40 IT <a class="_05226" href="#">Change</a></span>
-        <p>Quantity</p>
-        <span><select id="qamount">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-        </select></span>
-        <h5> <span>♡</span><a class="_05226 href="#">Move to wishlist</a><h5>
+        <p>Quantity 
+        <select id="qamount">
+        <option value="1" >1</option>
+        <option value="2" >2</option>
+        <option value="3" >3</option>
+        <option value="4" >4</option>
+        <option value="5" >5</option>
+        <option value="6" >6</option>
+        <option value="7" >7</option>
+        <option value="8" >8</option>
+        <option value="9" >9</option>
+        <option value="10" >10</option>
+    </select>
+        </p>
+        
+        <h5> <span>♡</span><a class="_05226 onclick="storeTowish">Move to wishlist</a><h5>
     </div>
     
         <button onclick="funn()">⨯</button>
@@ -98,14 +111,31 @@ div.innerHTML = `<div id="cartitems">
 </div>`
 
 
+
+
+
+
 container.append(div)
+console.log(price)
+
+// document.getElementById("quamount").addEventListener("update",
 
 
+// let qnt = document.getElementById("qamount").onchange = function() {
+//      let select = document.getElementById("qamount").value;
+    
+     
+     
+
+
+// }
 
 
 
  })
- console.log(mrp)
+ 
+
+ 
  document.getElementById("summaryBox").innerHTML=`
  <div class="">
      <div class="_8182e4">
@@ -148,5 +178,33 @@ container.append(div)
 
 
  }
+ else{
+document.getElementById("emptybox").innerHTML = ` <div class="_61ff08" data-testid="infoBlock">
+                    
+<p>There's nothing in your bag, yet...</p>
+</div>
+<div class="_db3fd8" data-testid="newIn">
+<div>
+    <p class="_520b1c _b4693b">420</p>
+    <p class="_b4693b">new items to shop</p>
+</div>
+<div class="_46a0d2" data-testid="newIn-images"><a 
+        href="#" data-testid="newIn-imageLink">
+        <picture>
+            <source media=""
+                srcset="https://cdn-images.farfetch-contents.com/18/03/61/45/18036145_40111502_170.jpg"><img
+                src="https://cdn-images.farfetch-contents.com/18/03/61/45/18036145_40111502_170.jpg"
+                alt="Shop Women" data-testid="newIn-featuredImage">
+        </picture>
+    </a></div>
+</div>
+<div data-testid="shoppingButtons"><a 
+    href="womens.html" 
+    class="shopwomen_button" >Shop Women</a></div>`;
+ }
+
+ 
+
+ 
 
  
