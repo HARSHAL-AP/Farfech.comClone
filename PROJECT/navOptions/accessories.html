@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <div id="fonts"></div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACCESSORIES</title>
+   
+    <link rel="stylesheet" href="optionsStyle.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div id="saleLine">
+        <a href="/">Sale</a>
+        <a href="/">Up to 50% off</a>
+        <a href="/">Shop the world's best designers</a>
+        </div>
+    <div id="header" style="position : sticky; top : 0px;">
+    </div>
+    
+    <h2 style="text-align: center;font-size: 20px;">Womens Home > Accessories</h2>
+    <h1 style="text-align: center;font-size: 30px; margin-top: 10px;">MORDERN ACCESSORIES FOR WOMENS</h1>
+    <nav class="side">
+        <ul>
+         <li><a href="#" class="one">Catagories
+             <span>
+                 <img src="../down.png"/>
+             </span>
+         </a>
+             <ul class="one-one">
+                 <li><a href="#">Belts</a></li>
+                 <li><a href="#">Cap</a></li>
+                 <li><a href="#">Braces</a></li>
+                 <li><a href="#">Face Mask</a></li>
+                 <li><a href="#">Glasses</a></li>
+                 <li><a href="#">Bridal Accessories</a></li>
+                 <li><a href="#">Gloves</a></li>
+                 <li><a href="#">Hair Accessories</a></li>
+                 <li><a href="#">Make Up Bags</a></li>
+             </ul>
+         </li>
+         <li><a href="#" class="two">Brands
+            <span>
+                <img src="../down.png"/>
+            </span>
+         </a>   
+         </li>
+         <li><a href="#" class="two">Size
+            <span>
+                <img src="../down.png"/>
+            </span>
+         </a>   
+         </li>
+         <li><a href="#" class="three">Colors
+            <span>
+                <img src="../down.png"/>
+            </span>
+         </a>   
+         </li>
+        </ul>
+     </nav>
+
+    <select id="sort">
+        <option>Sort By </option>
+        <option value="OP">Our Pics</option>
+        <option value="NF">Newest first</option>
+        <option value="HTL">Price: high to low</option>
+        <option value="LTH">Price: low to high</option>
+        <option value="DHTL">Discount: high to low</option>
+    </select>
+    
+    <div id="container"></div>
+</body>
+</html>
+
+<script type="module">
+    import { header,fonts } from '../components/header.js'
+    import { append } from '../components/append.js'
+let head = document.getElementById('header')
+head.innerHTML = header();
+let font = document.getElementById('fonts')
+font.innerHTML = fonts();
+
+let products = JSON.parse(localStorage.getItem('products'))
+console.log(products)
+
+products =  products.filter((el)=>{
+    if(el.type == 'accessories'){
+        return el
+    }
+})
+console.log(products)
+
+let container = document.getElementById('container')
+append(products,container)
+
+</script>
+
+<!-- 
+brand: "Dolce & Gabbana"
+category: "button-up denim jacket"
+desc: "Do you know that jacket you can always rely on? Constructed from dark-blue cotton so you can wear it with anything, this denim jacket will add a casual touch to your outfits. Where will this Dolce & Gabbana piece take you?"
+id: 0
+img1: "https://cdn-images.farfetch-contents.com/16/16/47/96/16164796_32907653_1000.jpg"
+img2: "https://cdn-images.farfetch-contents.com/16/16/47/96/16164796_32905900_1000.jpg"
+price: 753
+type: "newIn" -->
