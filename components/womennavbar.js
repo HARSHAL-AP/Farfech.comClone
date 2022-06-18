@@ -35,16 +35,16 @@ function navbar(){
     </div>
     </div>
     <div id="subnav">
-    <p>Sale</p>
-    <p>New In</p>
-    <p>Shop By</p>
-    <p>brands</p>
-    <p>Clothing</p>
-    <p>Shoes</p>
-    <p>Bags</p>
-    <p>Accessories</p>
-    <p>Jewelry</p>
-    <p>Pre-owned</p>
+    <p> <a href="">Sale</a> </p>
+    <p> <a href="">New In</a> </p>
+    <p> <a href="">Shop By</a> </p>
+    <p> <a href="">brands</a> </p>
+    <p> <a href="">Clothing</a> </p>
+    <p> <a href="">Shoes</a> </p>
+    <p> <a href="">Bags</a> </p>
+    <p> <a href="">Accessories</a> </p>
+    <p> <a href="">Jewelry</a> </p>
+    <p> <a href="">Pre-owned</a> </p>
 </div>
     <div id="myModal" class="modal">
     <!-- Modal content -->
@@ -63,3 +63,5 @@ function navbar(){
     </div>`
     }
     export{navbar}
+
+    
