@@ -166,7 +166,7 @@ html {
     position: relative;
     padding: 1.2rem;
     display: flex;
-    flex-flow: row wrap;
+    
     align-items: center;
     border-bottom: .1rem solid #b6b6b6
 }
@@ -211,11 +211,12 @@ html {
 
 }
 #productDetails div,img{
-    width: 25%;
+    width: 30%;
 }
 #productDetails img{
     padding-top: 40px;
-  height: 70%; 
+ width: 25%; 
+ padding-bottom: 60px;
 
     
     
@@ -227,6 +228,7 @@ html {
 
 #full_box{
     display: flex;
+    
 }
 
 
@@ -244,6 +246,7 @@ html {
 
 ._bba066 ._0f4c8f {
     
+    
     padding-bottom: 2.4rem
 }
 ._ec791b11 {
@@ -253,7 +256,7 @@ html {
 
 }
 ._1fe24a{
-    font-size: 15px;
+    font-size: 13px;
 }
 #productDetails button{
     height: 28px;
@@ -338,10 +341,14 @@ a._737011 {
     padding-left: 10px;
    
 }
+#summarybox,._8182e4 {
+    margin-right: 0px;
+}
 
 ._b4693b
 {
     font-size: large;
+    
     /* font-size: var(--fontSizeM);
     line-height: var(--lineHeightM) */
 }
@@ -352,6 +359,11 @@ a._737011 {
     opacity: 96%;
 
 }
+#quantity {
+    width: 40px;
+    margin-left: 10px;
+}
+
 #quantity span{
     font-size: 20px;
     font-family: 'Farfetch Basis','Helvetica Neue',Arial,sans-serif;
