@@ -21,15 +21,45 @@ let show2 = footNeedHelpDropDwnFunc();
 
 
 
-// let purchaseItem = JSON.parse(localStorage.getItem(""));
+let purchaseItem = JSON.parse(localStorage.getItem("arr")) || [];
 
-// testing data (need to change after geting original)
-let purchaseItem = [{
-    name: "shoes",
-    Image: "https://cdn-images.farfetch-contents.com/18/54/14/99/18541499_39987356_170.jpg",
-    price: "525"
-}]
-  
+//let totalAmountArr =  localStorage.setItem("totalAmount", JSON.stringify(arr3))
+
+
+// test cases:-
+
+// let purchaseItem = [
+//       {
+//         image:"https://cdn-images.farfetch-contents.com/17/93/96/16/17939616_40034532_480.jpg",
+//         img2:"https://cdn-images.farfetch-contents.com/17/93/96/16/17939616_40034505_1000.jpg",
+//         brand:"ZIMMERMANN",
+//         name:"Anneke mix-print midi dress",
+//         type: "clothing",
+//         price: 1820,
+//         qty: 1,
+//     },
+//     {
+//         image:"https://cdn-images.farfetch-contents.com/17/24/95/96/17249596_38000909_1000.jpg",
+//         img2:"https://cdn-images.farfetch-contents.com/17/24/95/96/17249596_37999896_1000.jpg", 
+//         brand:"Burberry",
+//         name:"Matelasses single breasted jacket",
+//         type: "clothing",
+//         price: 1685,
+//         qty: 1,
+    
+//     },
+//     {
+//         image:"https://cdn-images.farfetch-contents.com/17/70/19/36/17701936_39803374_480.jpg",
+//         img2:"https://cdn-images.farfetch-contents.com/17/70/19/36/17701936_39858339_1000.jpg", 
+//         brand:"Frankie shop",
+//         name:"Astra bommber jacket",
+//         type: "clothing",
+//         price: 615,
+//         qty: 1,
+//     }
+// ];
+
+
 import {promo, purchaseDesplay} from "../common Components/userPay.js";
 
 let appContainer = document.querySelector("#pSBox");
@@ -296,22 +326,6 @@ let updateProgressBar = ()=>{
 
 
 
-
-// footer dynamic name addition
-
-// let footerName = JSON.parse(localStorage.getItem(""));
-
-//Data test
-
-let footerName ={
-    userNameSign: "Dhananjay Kandalkar"
-}
-
-document.querySelector("#dynaUser").innerText=(footerName.userNameSign);
-
-
-
-
 // billing Address data appending to payment dropdown address section
 
 
@@ -334,7 +348,7 @@ p2.innerText = billingAddData.uAddress.add2;
 let p3 = document.createElement("p");
 p3.innerText = billingAddData.uAddress.add3;
 
-if (billingAddData.uAddress.add2=="" && billingAddData.uAddress.add3==""){
+if (billingAddData.uAddress.add1!==""){
     document.querySelector("#uAddApp").append(p1);
 }
 else if (billingAddData.uAddress.add2!==""){
@@ -351,3 +365,17 @@ let h4b = document.createElement("h4");
 h4b.innerText = billingAddData.uCountry;
 
 document.querySelector("#uContApp").append(h4b);
+
+
+
+
+// footer dynamic name addition
+
+// let footerName = JSON.parse(localStorage.getItem(""));
+
+//Data test
+let footerName ={
+    userNameSign: "Dhananjay Kandalkar"
+}
+
+document.querySelector("#dynaUser").innerText=(footerName.userNameSign);

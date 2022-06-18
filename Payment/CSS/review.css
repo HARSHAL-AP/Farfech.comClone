@@ -28,7 +28,14 @@
     width: 70%;
     margin-top: 35px;
 }
-#finalDetails, #allUserDetails{
+#finalDetails{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    row-gap: 30px;
+    border: 1px solid rgb(199, 199, 199);
+}
+#allUserDetails{
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -47,9 +54,6 @@
 }
 #finalDetails>div>h3, #finalDetails>div>p, #finalDetails>div>div>p{
     margin: 15px auto;
-}
-#finalDetails>div{
-    width: 23%;
 }
 #totalDel{
     height: 100px;

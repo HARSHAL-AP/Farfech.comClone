@@ -190,24 +190,21 @@ label{
 
 /* summery box */
 #pSummary{
-    width: 20%;
-    height: 300px;
+    width: 25%;
+    height: auto;
     margin: 50px 40px 10% 0;
-    position: -webkit-sticky;
     position: sticky;
-    top: 100px;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 15px;
 }
-
 #pSummary>h2{
     font-weight: 200;
     color: rgb(19, 18, 18);
     padding: 0 0 20px 6px;
 }
-#payContainer{
-    display: flex;
-    justify-content: space-between;
-}
-#pDelivery, #pTotal, #r1, #pLeft{
+#payContainer, #pDelivery, #pTotal, #r1, #pLeft{
     display: flex;
     justify-content: space-between;
 }
@@ -238,11 +235,15 @@ label{
     margin-top: 20px;
 }
 #pTotal{
-    margin-top: 20px;
+    margin: 25px 0;
 }
+
 #pTotal>div>p:nth-child(1),#pri>p:last-child{
     text-align: end;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
+
 
 #signal1, #signal2, #signal3, #signal4, #signal5,  #signal6,  #signal7,  #signal8{
     color: red;
@@ -272,12 +273,3 @@ label{
     font-size: 16px;
     font-weight: 400;
 }
-
-
-
-
-
-
-
-
-

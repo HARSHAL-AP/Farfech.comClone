@@ -1,28 +1,27 @@
 let promo = ()=>{
 
     return ` <h2>Summary</h2>
-    <!--This entire part should be dynamic-->
     <div id="pLeft">
         <div>
             <div id="r1">
-                <img id="prodImg" src="#">
-                <p id="last-left">Last 1 left</p>
+                <img id="prodImg" src="">
+                <p id="last-left"></p>
             </div>
         </div>
         <div id="pri">
             <p id="prodName"></p>
-            <p>$206.00</p>
+            <p></p>
         </div>
     </div>
     <div id="pDelivery">
         <p>Delivery</p>
-        <p>$24.00</p>
+        <p id="delCharges"></p>
     </div>
     <div id="pTotal">
         <p>Total</p>
-        <div>
-            <p>USD $230.00</p>
-            <p>Import duties included</p>
+        <div id="totalPrice">
+            <p></p>
+            <p></p>
         </div>
     </div>
     `
@@ -30,7 +29,7 @@ let promo = ()=>{
 
 
 let purchaseDesplay = (arrData, appContainer)=>{
-    console.log(arrData)
+    console.log(arrData);
 
     arrData.forEach((element) => {
         let maindiv1 = document.createElement("div");
@@ -43,8 +42,23 @@ let purchaseDesplay = (arrData, appContainer)=>{
 
         //Product image
         let prodImg = document.createElement("img");
-        prodImg.src=element.Image;
+        prodImg.src=element.image;
         prodImg.setAttribute("id", "prodImg");
+
+
+        prodImg.onmouseover=()=>{
+            prodImg.src=element.img2;
+
+            prodImg.style.height = "200px";
+            prodImg.style.width = "200px";
+        }
+
+        prodImg.onmouseout=()=>{
+            prodImg.src=element.image;
+
+            prodImg.style.height = "70px";
+            prodImg.style.width = "70px";
+        }
 
         let random = Math.floor(Math.random()*5)+1;
 

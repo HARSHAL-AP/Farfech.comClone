@@ -18,7 +18,7 @@ let pNavbar = () => {
 let pFooter=()=>{
     return `<div id="pUserName">
         <h4 id="dynaUser">User name (dynamic)</h4>
-        <a href="login.html">Sign out</a>
+        <a href="#">Sign out</a>
     </div>
     <div id="pHelp">
         <img id="countryLogo" src="./Assets/india logo.png" alt="lg">

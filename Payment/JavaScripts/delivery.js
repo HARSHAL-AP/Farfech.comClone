@@ -161,7 +161,7 @@ function addressCollection(){
     if (firstName=="" && lastName=="" && countryChoose=="" && addL1=="" && cityChoose=="" && stateChoose=="" && zipCode=="" && phoneNum=="" ){
         alert("Please fill address details");
     }
-    else if (firstName==""){
+    if (firstName==""){
         let p = document.createElement("p");
         p.innerText="*please fill First Name";
         document.querySelector("#signal1").append(p);
@@ -218,7 +218,9 @@ function addressCollection(){
         uAddress: {
             add1: pform.addL1.value,
             add2: pform.addL2.value,
-            // add3: pform.addL3.value
+            add3: function (){
+                return pform.addL3.value;
+            }
         },
         uCity: pform.pCity.value,
         uState: pform.pState.value,
@@ -234,8 +236,6 @@ function addressCollection(){
     console.log(obj);
 
     localStorage.setItem("userAddress", JSON.stringify(obj));
-
-   
 
     if (flag==true){
         window.location.href="payment.html";
@@ -272,7 +272,7 @@ let updateProgressBar = ()=>{
 };
 
 
-// billing addres validation functionality
+// billing address validation functionality
 let checkBillingAdd=(data)=>{
     localStorage.setItem("billingAddress", JSON.stringify(data));
 }
@@ -281,16 +281,45 @@ let checkBillingAdd=(data)=>{
 
 // purchase data summary functionality
 
-// this data will come from cart
-// let purchaseItem = JSON.parse(localStorage.getItem(""));
+let purchaseItem = JSON.parse(localStorage.getItem("arr")) || [];
 
-// testing data (need to change after geting original);
+console.log(purchaseItem);
 
-let purchaseItem = [{
-    name: "shoes",
-    Image: "https://cdn-images.farfetch-contents.com/18/54/14/99/18541499_39987356_170.jpg",
-    price: "525"
-}]
+// localStorage.setItem("totalAmount", JSON.stringify(arr3));
+
+
+// test cases:-
+// let purchaseItem = [
+//       {
+//         image:"https://cdn-images.farfetch-contents.com/17/93/96/16/17939616_40034532_480.jpg",
+//         img2:"https://cdn-images.farfetch-contents.com/17/93/96/16/17939616_40034505_1000.jpg",
+//         brand:"ZIMMERMANN",
+//         name:"Anneke mix-print midi dress",
+//         type: "clothing",
+//         price: 1820,
+//         qty: 1,
+//     },
+//     {
+//         image:"https://cdn-images.farfetch-contents.com/17/24/95/96/17249596_38000909_1000.jpg",
+//         img2:"https://cdn-images.farfetch-contents.com/17/24/95/96/17249596_37999896_1000.jpg", 
+//         brand:"Burberry",
+//         name:"Matelasses single breasted jacket",
+//         type: "clothing",
+//         price: 1685,
+//         qty: 1,
+    
+//     },
+//     {
+//         image:"https://cdn-images.farfetch-contents.com/17/70/19/36/17701936_39803374_480.jpg",
+//         img2:"https://cdn-images.farfetch-contents.com/17/70/19/36/17701936_39858339_1000.jpg", 
+//         brand:"Frankie shop",
+//         name:"Astra bommber jacket",
+//         type: "clothing",
+//         price: 615,
+//         qty: 1,
+//     }
+// ];
+
 
 import {promo, purchaseDesplay} from "../common Components/userPay.js";
 
@@ -301,21 +330,7 @@ purchaseDesplay (purchaseItem, appContainer);
 
 
 
-// footer dynamic name addition
-
-// let footerName = JSON.parse(localStorage.getItem(""));
-
-//Data test (need to take original from team member)
-
-let footerName ={
-    userNameSign: "Dhananjay Kandalkar"
-}
-
-document.querySelector("#dynaUser").innerText=(footerName.userNameSign);
-
-
-
-// country choose dropdown functionality
+// country choose dropdown functionalitys
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
@@ -335,10 +350,22 @@ document.addEventListener("DOMContentLoaded", ()=>{
 let appendCountries=(selectDrop,contData)=>{
     let showCountries ="";
     contData.forEach(element => {
-        // console.log(element.name)
         showCountries+= `<option value="${element.name}">${element.name}</option>`;
 
     });
     selectDrop.innerHTML=showCountries;
 }
+
+
+
+
+// footer dynamic name addition
+
+// let footerName = JSON.parse(localStorage.getItem(""));
+
+// data test
+let footerName ={
+    userNameSign: "Dhananjay Kandalkar"
+}
+document.querySelector("#dynaUser").innerText=(footerName.userNameSign);
 
