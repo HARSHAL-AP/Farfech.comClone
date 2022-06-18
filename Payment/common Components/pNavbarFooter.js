@@ -8,9 +8,9 @@ let pNavbar = () => {
         <img src="./Assets/farfetch2.png" alt="farfetch">
     </div>
     <div id="pHelp">
-        <h4>Need Help?</h4>
+        <h4 id="clicked">Need Help?</h4>
         <span><i class="fa-solid fa-phone"></i></span>
-        <h4>(+44 (0) 20 3510 0670)</h4>
+        <h4 id="numClick">(+44 (0) 20 3510 0670)</h4>
     </div>`;
 };
 
@@ -23,9 +23,9 @@ let pFooter=()=>{
     <div id="pHelp">
         <img id="countryLogo" src="./Assets/india logo.png" alt="lg">
         <p>IN/USD ($)</p>
-        <h4>Need Help?</h4>
+        <h4 id="fclicked">Need Help?</h4>
         <span><i class="fa-solid fa-phone"></i></span>
-        <h4>(+44 (0) 20 3510 0670)</h4>
+        <h4 id="fNumClick">(+44 (0) 20 3510 0670)</h4>
     </div>`
 }
 

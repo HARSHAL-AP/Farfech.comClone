@@ -9,7 +9,7 @@
 /* Navbar */
 #pNavbar{
     width: 100%;
-    height: 50px;
+    height: 55px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +19,7 @@
     position: sticky;
     top: 0;
     padding: 5px;
+    z-index: 325;
 }
 #checkouts{
     width: 42%;
@@ -52,6 +53,13 @@
     width: 13%;
     height: 25px;
     object-fit: fill;
+}
+
+#clicked:hover, #numClick:hover, #fclicked:hover, #fNumClick:hover{
+    color: grey;
+    opacity: 1.5;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 

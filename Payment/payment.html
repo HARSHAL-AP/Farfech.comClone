@@ -9,73 +9,93 @@
     <link rel="stylesheet" href="./CSS/delivery.css">
     <link rel="stylesheet" href="./CSS/payment.css">
 
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css"
+    />
+
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <nav id="pNavbar">
         <!-- Exported -->
     </nav>
+    <div id="needHelpDropDwn" class="dropped">
+        <!-- exported -->
+    </div>
     <div id="payContainer">
         <div id="pFields">
             <!-- progress baar -->
-            <div id="prog-bar">
-                <!-- <img src="./Assets/box_tracker_black.svg" alt=""> -->
-                <span><i class="fa-solid fa-box-archive"></i></span>
-                <div>
-                </div>
+            <i class="fa-solid fa-box-archive"></i>
+            <div id="progressbar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-step progress-step-active" data-title="Delivery"></div>
+                <div class="progress-step progress-step-active" data-title="Payment"></div>
+                <div class="progress-step" data-title="Review"></div>
             </div>
 
-            <!-- inputs -->
+            <!-- inputs Groups-->
             <div id="userDetails">
                 <form action="#" id="pform">
                     <h2>Select your payment method</h2>
                     <div id="nameSec">
-                        <div>
+                        <div id="paypal-pay-wrapper">
                             <img src="https://cdn-static.farfetch-contents.com/assets/portal-checkout-web/v2-0-22165-382/Static/assets/images/payment-icons/payment_paypalexp.svg" alt="paypal">
                         </div>
-                        <div>
-                            <i class="fa-regular fa-credit-card-blank"></i>
-                            <span>Debit or credit card</span>
+                        <div id="debit-pay-wrapper">
+                            <i class="fa-solid fa-credit-card"></i>
+                            Debit or credit card
                         </div>
                     </div>
-                    <div id="card-container">
+
+                    <!-- card clicking dropdown-->
+                    <div id="card-container" class="dropdown-content">
                         <div id="pCountries">
                             <label for="pCountry">Cardholder name</label>
-                            <input required type="text" id="pCountry" class="card_name">
+                            <input required type="text" id="pCountry" class="card_name" tabindex="1">
+                            <div id="pSign1"></div>
                         </div>
                         <div id="city-state">
                             <div>
                                 <label for="pCity">Card number</label>
-                                <input required type="number" id="pCity" class="card_digits" maxlength="19" placeholder="**** **** **** ****">
+                                <input required type="text" id="pCity" class="card_digits" placeholder="****-****-****-****" tabindex="2">
+                                <div id="pSign2"></div>
                             </div>
                             <div>
                                 <label for="pState">Expiration date</label>
-                                <input required type="text" id="pState" placeholder="MM/YY" maxlength="5" class="card_date">
+                                <input required type="text" id="pState" placeholder="MM/YY" class="card_date" tabindex="3"> 
+                                <div id="pSign3"></div>
                             </div>
                         </div>
                         <div id="zip-phone">
                             <div>
                                 <label for="pZip">Security code</label>
-                                <input required type="number" id="pZip" class="cvv" maxlength="3" placeholder="***">
+                                <input required type="text" id="pZip" class="cardCcv" placeholder="***" tabindex="4">
+                                <div id="pSign4"></div>
                             </div>
                         </div>
+                        <div class="card__col card__brand"><i id="cardBrand"></i></div>
                         <div id="checkbox">
                             <label for="chkInput">
-                                <input type="checkbox" id="chkInput" name="billingAdd">Save payment details
+                                <input required type="checkbox" id="chkInput" class="cardSave" name="billingAdd">Save payment details
+                                
                             </label>
+                            <div id="pSign5"></div>
+                        </div>
+                        <div id="allDetailsDone">
                         </div>
                         <div id="userAddBox">
                             <h2>BILLING ADDRESS</h2>
-                            <!-- dynamic part -->
                             <div id="billAdd">
-                                <div>username</div>
-                                <div>address</div>
-                                <div>country</div>
-                                <!-- dynamic -->
+                                <div id="uNameApp"></div>
+                                <div id="uAddApp"></div>
+                                <div id="uContApp"></div>
                                 <div><a href="./delivery.html">Edit</a></div>
                             </div>
                         </div>
@@ -103,9 +123,18 @@
             </div>
         </div>
     </div>
+
+    <div id="footNeedHelpDropDwn">
+        <!-- exported -->
+    </div>
     <footer id="pFooter">
         <!-- exported -->
     </footer>
+
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+
 <script type="module" src="./JavaScripts/payment.js"></script>
+
+<script type="text/javascript" src="./JavaScripts/JQFunctions.js"></script>

@@ -17,20 +17,25 @@
     referrerpolicy="no-referrer"/>
 </head>
 <body>
+    <!-- exported -->
     <nav id="pNavbar">
 
     </nav>
+    <div id="needHelpDropDwn" class="dropped">
+        <!-- exported -->
+    </div>
 
     <div id="orderContainer">
         <div id="orderFields">
             <!-- progress baar -->
-            <div id="prog-bar">
-                <!-- <img src="./Assets/box_tracker_black.svg" alt=""> -->
-                <span><i class="fa-solid fa-box-archive"></i></span>
-                <div>
-                </div>
+            <i class="fa-solid fa-box-archive"></i>
+            <div id="progressbar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-step progress-step-active" data-title="Delivery"></div>
+                <div class="progress-step progress-step-active" data-title="Payment"></div>
+                <div class="progress-step progress-step-active" data-title="Review"></div>
             </div>
-            <!--  -->
+            <!--reveiew purchase group-->
             <div id="dynaBox">
                 <h2>Your Order</h2>
                 <div id="infoT">
@@ -42,32 +47,32 @@
                 </div>
                 <div id="finalDetails">
                     <div>
-                        <img src="#" alt="">
+                        <img id="prodImg" src="" alt="">
                     </div>
                     <div>
                         <!-- dynamic -->
-                        <h3>Alexander McQueen</h3>
-                        <p>draped denim skirt</p>
+                        <h3 id="revProdItem"></h3>
+                        <p id="prodType"></p>
                         <div>
-                            <p>Size42 IT</p>
-                            <p>Quantity1</p>
-                            <p>Last 1 left</p>
+                            <p id="prodSizeD"></p>
+                            <p id="prodQuantity"></p>
+                            <p id="lastRem"></p>
                         </div>
                     </div>
                     <div>
-                        <h3>$1,434.00</h3>
-                        <p>Import duties included</p>
+                        <h3 id="revPriceDs"></h3>
+                        <p id="dutiesApp"></p>
                     </div>
                     <div>
                         <!-- dynamic -->
-                        <h3>Arriving between Jun 17 and Jun 22</h3>
-                        <p>$24.00</p>
+                        <h3 id="arrivingDate"></h3>
+                        <p id="revDelCharge"></p>
                     </div>
                 </div>
             </div>
             <div id="totalDel">
                 <h3>Total delivery</h3>
-                <h3>USD $24.00</h3>
+                <h3 id="revTotalCharge"></h3>
             </div>
 
             <div id="allUserDetails">
@@ -75,8 +80,8 @@
                     <h3>DELIVERY ADDRESS</h3>
                     <!-- dynamic -->
                     <div>
-                        <p>Payment holder name</p>
-                        <address>user address</address>
+                        <p id="uDelNameApp"></p>
+                        <div id="uDelAddApp"></div>
                     </div>
                     <a href="./delivery.html">Edit</a>
                 </div>
@@ -84,8 +89,8 @@
                     <h3>BILLING ADDRESS</h3>
                     <!-- dynamic -->
                     <div>
-                        <p>Payment holder name</p>
-                        <address>user address</address>
+                        <p id="revholdApp"></p>
+                        <div id="revAddApp"></div>
                     </div>
                     <a href="./delivery.html">Edit</a>
                 </div>
@@ -93,9 +98,9 @@
                     <h3>PAYMENT METHOD</h3>
                     <!-- dynamic -->
                     <div>
-                        <p>Payment holder name</p>
-                        <p>card ending num (slice)</p>
-                        <p>Expiration date on card</p>
+                        <p id="hNameApp"></p>
+                        <p id="cardNumApp"></p>
+                        <p id="expDateApp"></p>
                     </div>
                     <a href="./payment.html">Edit</a>
                 </div>
@@ -118,6 +123,9 @@
                 <button id="save-btn" class="place-order">Place Order</button>
             </div>
         </div>
+    </div>
+    <div id="footNeedHelpDropDwn">
+        <!-- exported -->
     </div>
     <footer id="pFooter">
 

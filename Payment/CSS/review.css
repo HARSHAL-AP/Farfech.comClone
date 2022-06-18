@@ -1,3 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+#orderFields .fa-box-archive{
+    left: 64.5%;
+    top: 90px;
+}
+
+/* final order review */
+
 #orderContainer, #infoT>div{
     display:  flex;
     justify-content: space-between;
@@ -24,6 +34,11 @@
     justify-content: space-between;
     border: 1px solid rgb(199, 199, 199);
 }
+
+#revAddApp, #uDelAddApp{
+    margin-top: 10px;
+}
+
 /* dynamic image */
 #finalDetails>div>img{
     width: 100%;

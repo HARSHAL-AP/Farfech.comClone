@@ -15,27 +15,37 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"/>
 
+    <script
+      src="https://kit.fontawesome.com/57a88932f2.js"
+      crossorigin="anonymous"
+    ></script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
 </head>
 <body>
-    <!--part 1- Payment navbar  -->
+    <!--part 1- Payment navbar exported  -->
     <nav id="pNavbar">
 
     </nav>
+    <div id="needHelpDropDwn" class="dropped">
+        <!-- exported -->
+    </div>
 
     <!--part 2= User detail fields  -->
     <div id="payContainer">
         <div id="pFields">
             <!-- progress baar -->
-            <div id="prog-bar">
-                <span><i class="fa-solid fa-box-archive"></i></span>
-                <div>
-                </div>
+            <i class="fa-solid fa-box-archive"></i>
+            <div id="progressbar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-step progress-step-active" data-title="Delivery"></div>
+                <div class="progress-step" data-title="Payment"></div>
+                <div class="progress-step" data-title="Review"></div>
             </div>
 
-            <!-- inputs -->
+            <!-- Input Groups -->
             <div id="userDetails">
                 <form id="pform">
                     <h2>Add your delivery address</h2>
@@ -52,14 +62,11 @@
                             <div id="signal2"></div>
                         </div>
                     </div>
-                    <!-- countries show -- dropDouwn has to be done  here-->
                     <div id="pCountries">
                         <label for="pCountry">Country / region *</label>
                         <select id="pCountry" name="countries" class="next" required tabindex="3"></select>
                         <div id="signal3"></div>
                     </div>
-
-                    <!-- addressess -->
                     <div id="pAddress">
                         <label for=".add1">Address *</label>
                         <div>
@@ -102,7 +109,7 @@
                     </div>
                     <div id="checkbox">
                         <label for="chkInput">
-                            <input type="checkbox" id="chkInput" name="Billing Address">Use as billing address
+                            <input type="checkbox" id="chkInput" name="Billing Address" tabindex="10">Use as billing address
                         </label>
                     </div>
                     <div id="allDone">
@@ -125,12 +132,14 @@
         </div>
 
     </div>
-    
+
+    <div id="footNeedHelpDropDwn">
+        <!-- exported -->
+    </div>
     <!--Payment footer == exported  -->
     <footer id="pFooter">
         
     </footer>
-
 </body>
 </html>
 
@@ -138,3 +147,4 @@
 
   
 <script type="text/javascript" src="./JavaScripts/JQFunctions.js"></script>
+

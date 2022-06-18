@@ -6,8 +6,126 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
-/* inputs */
 
+:root{
+    --primary-color: green
+}
+
+
+/* need help dropDown */
+
+#pHelp{
+    position: relative;
+    display: inline-block;
+}
+#needHelpDropDwn, #footNeedHelpDropDwn{
+    display: none;
+    position: absolute;
+    right: 10%;
+    min-width: 20%;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    z-index: 875455;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 400;
+}
+#footNeedHelpDropDwn{
+    top: 80%;
+}
+
+#imageBox {
+    position: relative;
+}
+
+#imageBox img{
+    width: 100%;
+    border-radius: 5px;
+}
+#x{
+    position: absolute;
+    top: 3%;
+    right: 3%; 
+    color: rgb(145, 142, 142);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+#activeBox, #makeCall, .activeToday{
+    margin-top: 15px;
+}
+.Act{
+    margin: 6px 15px;
+}
+
+
+
+/* progress bar */
+
+.fa-box-archive{
+    position: absolute;
+    left: 55px;
+    top: 70px;
+}
+
+#icon-progress{
+    border: 1px solid red;
+}
+
+#progressbar{
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    margin: 20px auto;
+    counter-reset: step;
+}
+#progressbar::before, .progress{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+.progress{
+    background-color: var(--primary-color);
+    width: 6px;
+}
+.progress-step{
+    width: 35px;
+    height: 35px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-step::before{
+    counter-increment: step;
+    content: counter(step);
+}
+.progress-step::after{
+    content: attr(data-title);
+    position: absolute;
+    top: calc(80% + 2px);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.progress-step-active{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* inputs Groups*/
 #userDetails{
     margin-left: 25px;
 }
@@ -24,11 +142,9 @@ label{
 }
 #userDetails{
     width: 70%;
-    /* border: 1px solid blue; */
 }
 #pform{
     width: 90%;
-    /* border: 1px solid  green; */
     margin:15px auto;
 }
 #pform>h2{
@@ -67,13 +183,16 @@ label{
     font-size: 18px;
     margin-bottom: 30px;
 }
+.fa-circle-check{
+    background-color: white;
+    color: green;
+}
 
 /* summery box */
 #pSummary{
     width: 20%;
     height: 300px;
-    /* border: 1px solid purple; */
-    margin: 50px 35px;
+    margin: 50px 40px 10% 0;
     position: -webkit-sticky;
     position: sticky;
     top: 100px;
@@ -95,6 +214,11 @@ label{
 #btnBox{
     display: flex;
     justify-content: center;
+}
+#prodName{
+    margin-left: 8px;
+    text-align: end;
+    margin-bottom: 10px;
 }
 #save-btn{
     margin-top: 30px;
@@ -126,6 +250,7 @@ label{
     font-weight: 600;
     margin-top: 6px;
 }
+
 #allDone{
     color: green;
 }
