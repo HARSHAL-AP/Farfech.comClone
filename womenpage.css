@@ -3,9 +3,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 10px; 
-    width: 97%;
+    width: 95%;
     margin-bottom: 50px;
     margin-top: 50px;
+    margin-left: 20px;
 }
 
 #one>div{
@@ -44,6 +45,10 @@
 h2{
     text-align: center;
 }
+#one>div>h3+a{
+    font-size: 27px;
+    color: black;
+}
 #newin{
     margin: auto;
     display: grid;
@@ -60,6 +65,7 @@ border: 0ch;
 margin-top: 10px;
 margin-left: 90%;
 cursor: pointer;
+padding: 3px;
 }
 #newin>div>button:hover{
     color: antiquewhite;

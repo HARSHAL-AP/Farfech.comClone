@@ -23,6 +23,7 @@
   padding-top: 24px;
   padding-bottom: 0px;
   z-index: 1;
+ 
 }
 #navhead {
   height: 45px;
@@ -47,6 +48,10 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+}
+#pagees>p>a{
+  text-decoration: none;
+  color: black;
 }
 
 #mainlogo {
@@ -266,4 +271,8 @@
   gap: 30px;
   margin-left: 20px;
   
+}
+#subnav>p>a{
+  text-decoration: none;
+  color: black;
 }
