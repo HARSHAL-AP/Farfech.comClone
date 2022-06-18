@@ -96,7 +96,7 @@ class="flagIcon" data-testid="itemGroupHeader-countryFlag"></span>
 
     sl.id = "quantity";
     sl.type = "number";
-    sl.addEventListener.onchange = function () {
+    sl.addEventListener.onclick = function () {
       el.qty = sl.value;
       console.log("el.qty")
     //   mrp += el.price * el.qty;
@@ -228,6 +228,7 @@ function summaryBox(mrp, dCharge) {
     .addEventListener("click", function () {
       let arr3 = {
         totalAmount: mrp + dCharge,
+        dlvC : dCharge
       };
 
       localStorage.setItem("totalAmount", JSON.stringify(arr3)); // total amount stored for payment page
