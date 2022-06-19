@@ -5,7 +5,7 @@ let pNavbar = () => {
         <img src="./Assets/degicert.png" alt="degicert">
     </div>
     <div id="webLogo">
-        <img src="./Assets/farfetch2.png" alt="farfetch">
+        <img id="switched" src="./Assets/farfetch2.png" alt="farfetch">
     </div>
     <div id="pHelp">
         <h4 id="clicked">Need Help?</h4>
@@ -18,7 +18,7 @@ let pNavbar = () => {
 let pFooter=()=>{
     return `<div id="pUserName">
         <h4 id="dynaUser">User name (dynamic)</h4>
-        <a href="#">Sign out</a>
+        <a href="../LoginPage/index.html">Sign out</a>
     </div>
     <div id="pHelp">
         <img id="countryLogo" src="./Assets/india logo.png" alt="lg">

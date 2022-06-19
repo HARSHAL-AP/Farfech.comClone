@@ -361,11 +361,20 @@ let appendCountries=(selectDrop,contData)=>{
 
 // footer dynamic name addition
 
-// let footerName = JSON.parse(localStorage.getItem(""));
+let footerName = JSON.parse(localStorage.getItem("userData"))
 
-// data test
-let footerName ={
-    userNameSign: "Dhananjay Kandalkar"
+//test case
+// let footerName ={
+//     userNameSign: "Dhananjay Kandalkar"
+// }
+
+document.querySelector("#dynaUser").innerText=(footerName.name);
+
+
+
+// switch to homepage from navbar farfetch logo
+
+document.querySelector("#switched").onclick=()=>{
+    window.location.href="/index.html"
 }
-document.querySelector("#dynaUser").innerText=(footerName.userNameSign);
 

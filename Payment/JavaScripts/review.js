@@ -208,23 +208,31 @@ while(start<2){
 
 //footer dynamic name addition
 
-// let footerName = JSON.parse(localStorage.getItem(""));
+let footerName = JSON.parse(localStorage.getItem("userData"))
 
-//Data test
-let footerName ={
-    userNameSign: "Dhananjay Kandalkar"
-}
+//test case
+// let footerName ={
+//     userNameSign: "Dhananjay Kandalkar"
+// }
 
-document.querySelector("#dynaUser").innerText=(footerName.userNameSign);
-
-
+document.querySelector("#dynaUser").innerText=(footerName.name);
 
 
-//prcess done!! go to homepage functionality
+
+
+//process done!! go to homepage functionality
 
 let saveCardDetails=()=>{
     alert("Your Payment successfully done!");
 
-    window.location.href="index.html";
+    window.location.href="/index.html";
 }
 document.querySelector(".place-order").addEventListener("click", saveCardDetails)
+
+
+
+// switch to homepage from navbar farfetch logo
+
+document.querySelector("#switched").onclick=()=>{
+    window.location.href="/index.html"
+}
