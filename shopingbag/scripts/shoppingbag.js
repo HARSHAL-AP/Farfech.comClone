@@ -2,67 +2,36 @@ import { navbar, fotter } from "/components/navbar.js";
 document.getElementById("navbar").innerHTML = navbar();
 document.getElementById("bot").innerHTML = fotter();
 
-let arr= JSON.parse(localStorage.getItem("arr")) || [];
+// let arr= JSON.parse(localStorage.getItem("arr")) || [];
 
-// let arr = [
-//   {
-//     id:4,
-//     image:"https://cdn-images.farfetch-contents.com/17/93/96/16/17939616_40034532_480.jpg",
-//     img2:"https://cdn-images.farfetch-contents.com/17/93/96/16/17939616_40034505_1000.jpg",
-//     brand:"ZIMMERMANN",
-//     name:"Anneke mix-print midi dress",
-//     type: "clothing",
-//     price: 1820,
-//     qty: 1,
+let arr = [
+  {
+    id:18,
+    image:"https://cdn-images.farfetch-contents.com/18/39/13/94/18391394_39818609_1000.jpg",
+    img2:"https://cdn-images.farfetch-contents.com/18/39/13/94/18391394_39818608_1000.jpg", 
+    brand:"Oscar de la Renta",
+    name:"floral-print halterneck dress",
+    type: "newIn",
+    price: 4820,
+    qty:1
 
-// },
-// {
-//     id:5,
-//     image:"https://cdn-images.farfetch-contents.com/17/24/95/96/17249596_38000909_1000.jpg",
-//     img2:"https://cdn-images.farfetch-contents.com/17/24/95/96/17249596_37999896_1000.jpg", 
-//     brand:"Burberry",
-//     name:"Matelasses single breasted jacket",
-//     type: "clothing",
-//     price: 1685,
-//     qty: 1,
+},
+{
+  id:19,
+  image:"https://cdn-images.farfetch-contents.com/18/03/77/01/18037701_39577867_1000.jpg",
+  img2:"https://cdn-images.farfetch-contents.com/18/03/77/01/18037701_39580129_1000.jpg", 
+  brand:"GIABORGHINI",
+  name:"Gia slingback satin sandals",
+  type: "newIn",
+  price: 3120,
+  qty: 1,
 
-// },
-// {
-//     id:6,
-//     image:"https://cdn-images.farfetch-contents.com/17/70/19/36/17701936_39803374_480.jpg",
-//     img2:"https://cdn-images.farfetch-contents.com/17/70/19/36/17701936_39858339_1000.jpg", 
-//     brand:"Frankie shop",
-//     name:"Astra bommber jacket",
-//     type: "clothing",
-//     price: 615,
-//     qty: 1,
-    
-// },
-// {
-//     id:7,
-//     image:"https://cdn-images.farfetch-contents.com/17/59/07/59/17590759_40022255_480.jpg",
-//     img2:"https://cdn-images.farfetch-contents.com/17/59/07/59/17590759_40023863_1000.jpg",
-//     brand:"Off-White",
-//     name:"LAUNDRY CARGO TRACKPANT NUDE NUDE",
-//     type: "clothing",
-//     price: 891,
-//     qty: 1,
+},
 
-// },
-// {
-//     id:8,
-//     image:"https://cdn-images.farfetch-contents.com/18/58/59/66/18585966_40133011_480.jpg",
-//     img2:"https://cdn-images.farfetch-contents.com/18/58/59/66/18585966_40133013_1000.jpg", 
-//     brand:"Bottega Veneta",
-//     name:"Long-sleeved knitted polo top",
-//     type: "clothing",
-//     price: 2253,
-//     qty: 1,
 
-// },
-//   
-// ];
-// localStorage.setItem("arr", JSON.stringify(arr));
+  
+];
+localStorage.setItem("arr", JSON.stringify(arr));
 
 console.log(arr.length);
 
