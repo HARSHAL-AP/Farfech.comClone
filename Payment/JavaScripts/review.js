@@ -225,6 +225,6 @@ document.querySelector("#dynaUser").innerText=(footerName.userNameSign);
 let saveCardDetails=()=>{
     alert("Your Payment successfully done!");
 
-    window.location.href="index.html";
+    window.location.href="/index.html";
 }
 document.querySelector(".place-order").addEventListener("click", saveCardDetails)
