@@ -1,0 +1,1 @@
+Functionality od payment page

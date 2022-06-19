@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+#orderFields .fa-box-archive{
+    left: 64.5%;
+    top: 90px;
+}
+
+/* final order review */
+
+#orderContainer, #infoT>div{
+    display:  flex;
+    justify-content: space-between;
+}
+
+#dynaBox, #allUserDetails, #totalDel{
+    margin-left: 25px;
+}
+#dynaBox>h2{
+    margin-bottom:25px;
+}
+#infoT{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+#orderFields{
+    width: 70%;
+    margin-top: 35px;
+}
+#finalDetails{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    row-gap: 30px;
+    border: 1px solid rgb(199, 199, 199);
+}
+#allUserDetails{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+#revAddApp, #uDelAddApp{
+    margin-top: 10px;
+}
+
+/* dynamic image */
+#finalDetails>div>img{
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+}
+#finalDetails>div>h3, #finalDetails>div>p, #finalDetails>div>div>p{
+    margin: 15px auto;
+}
+#totalDel{
+    height: 100px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 100px;
+}
+#allUserDetails{
+    margin-top: 45px;
+}
+#allUserDetails>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#allUserDetails>div>h3{
+    font-weight: 200;
+}
+#allUserDetails>div>div>p, address{
+    margin-top: 13px;
+}
+
+#allUserDetails>div>a{
+    margin-top: 25px;
+    color: black;
+}
+.fa-circle-info{
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+#pSummary #promoBox{
+    height: auto;
+}
+#promoBox>div{
+    margin-bottom: 8px;
+}
+
+#promoBox>a{
+    color: black;
+    margin-left: 8px;
+}

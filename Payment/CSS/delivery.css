@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+:root{
+    --primary-color: green
+}
+
+
+/* need help dropDown */
+
+#pHelp{
+    position: relative;
+    display: inline-block;
+}
+#needHelpDropDwn, #footNeedHelpDropDwn{
+    display: none;
+    position: absolute;
+    right: 10%;
+    min-width: 20%;
+    overflow: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    z-index: 875455;
+    cursor: pointer;
+    background-color: white;
+    font-weight: 400;
+}
+#footNeedHelpDropDwn{
+    top: 80%;
+}
+
+#imageBox {
+    position: relative;
+}
+
+#imageBox img{
+    width: 100%;
+    border-radius: 5px;
+}
+#x{
+    position: absolute;
+    top: 3%;
+    right: 3%; 
+    color: rgb(145, 142, 142);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+#activeBox, #makeCall, .activeToday{
+    margin-top: 15px;
+}
+.Act{
+    margin: 6px 15px;
+}
+
+
+
+/* progress bar */
+
+.fa-box-archive{
+    position: absolute;
+    left: 55px;
+    top: 70px;
+}
+
+#icon-progress{
+    border: 1px solid red;
+}
+
+#progressbar{
+    width: 90%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0;
+    margin: 20px auto;
+    counter-reset: step;
+}
+#progressbar::before, .progress{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+}
+.progress{
+    background-color: var(--primary-color);
+    width: 6px;
+}
+.progress-step{
+    width: 35px;
+    height: 35px;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-step::before{
+    counter-increment: step;
+    content: counter(step);
+}
+.progress-step::after{
+    content: attr(data-title);
+    position: absolute;
+    top: calc(80% + 2px);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.progress-step-active{
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* inputs Groups*/
+#userDetails{
+    margin-left: 25px;
+}
+#nameSec, #city-state, #zip-phone{
+    display: flex;
+    gap: 15px;
+}
+label{
+    display: block;
+    margin-bottom: 6px;
+}
+#pFields{
+    width: 70%;
+}
+#userDetails{
+    width: 70%;
+}
+#pform{
+    width: 90%;
+    margin:15px auto;
+}
+#pform>h2{
+    font-weight: 200;
+    color: rgb(19, 18, 18);
+    padding: 20px 0;
+}
+#pform>div{
+    margin-top: 20px;
+}
+#nameSec>div, #city-state>div, #zip-phone>div{
+    width: 50%;
+}
+#pName, #lastName, #pCity, #pState, #pZip, #pPhone, #pCountry,#pAddress>div>input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(192, 190, 190);
+}
+#add-line>div{
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    margin-top: 12px;
+    cursor: pointer;
+}
+#pAddress>div>input{
+    margin-top: 12px;
+}
+#chkInput{
+   margin-right: 15px;
+   width: 18px;
+   height: 18px;
+   vertical-align: middle;
+}
+#checkbox>label{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.fa-circle-check{
+    background-color: white;
+    color: green;
+}
+
+/* summery box */
+#pSummary{
+    width: 25%;
+    height: auto;
+    margin: 50px 40px 10% 0;
+    position: sticky;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    border-radius: 15px;
+}
+#pSummary>h2{
+    font-weight: 200;
+    color: rgb(19, 18, 18);
+    padding: 0 0 20px 6px;
+}
+#payContainer, #pDelivery, #pTotal, #r1, #pLeft{
+    display: flex;
+    justify-content: space-between;
+}
+#btnBox{
+    display: flex;
+    justify-content: center;
+}
+#prodName{
+    margin-left: 8px;
+    text-align: end;
+    margin-bottom: 10px;
+}
+#save-btn{
+    margin-top: 30px;
+    background-color: rgb(65, 64, 64);
+    color: white;
+    width: 100%;
+    height:45px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+}
+#pDelivery{
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
+#pTotal{
+    margin: 25px 0;
+}
+
+#pTotal>div>p:nth-child(1),#pri>p:last-child{
+    text-align: end;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+#signal1, #signal2, #signal3, #signal4, #signal5,  #signal6,  #signal7,  #signal8{
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+#allDone{
+    color: green;
+}
+
+#prodImg{
+    width: 70px;
+    height: 70px;
+}
+
+#countryLogo{
+    width: 25px ;
+    height: 25px;
+    border-radius: 50%;
+}
+#pCountry{
+    padding: 15px;
+}
+#pCountry>option{
+    font-size: 16px;
+    font-weight: 400;
+}

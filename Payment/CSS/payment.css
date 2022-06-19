@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+.fa-box-archive{
+    left: 34.5%;
+}
+
+#footNeedHelpDropDwn{
+    top: 40%;
+}
+
+
+ /* payment card fetails */
+#userDetails{
+    width: 80%;
+}
+#pform{
+    width: 100%;
+}
+#nameSec>div{
+    width: 100%;
+    height: 80px;
+    border: 1px solid rgb(165, 162, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-credit-card{
+    margin-right: 12px;
+}
+#nameSec>div>img{
+    width: 50%;
+    height: 50%;
+    object-fit: fill;
+}
+#city-state, #zip-phone, #city-state,#checkbox{
+    margin-top: 35px;
+}
+label{
+    padding-bottom: 10px;
+}
+#promoBox{
+    height: 100px;
+    background-color: rgb(230, 232, 238);
+    margin-top: 25px;
+}
+#promoBox>p{
+    padding-top: 8px;
+    margin: 0 0 12px 6px;
+}
+#promoBox>div>input{
+    width: 92%;
+    height: 40px;
+    margin-left: 8px;
+}
+#suggest{
+    border: 1px solid rgb(230, 232, 238);
+    margin-top: 20px;
+    padding: 20px;
+}
+#pSummary{
+    position: sticky;
+    top: 50px;
+    bottom: 30px;
+}
+#userAddBox>h2{
+    font-weight: 200;
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    padding: 15px;
+}
+#billAdd{
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(230, 232, 238);
+    font-size: 18px;
+}
+#billAdd>div:last-child>a{
+    color: black;
+}
+#pHelp{
+    width: 42%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+/* credit/debit auto show */
+
+.card__brand {
+    font-size: 4rem;
+    min-width:90%;
+    min-height: 70px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    margin-top: 25px;
+}
+.card__brand>i{
+    margin-right: 8px;
+    color: red;
+}
+
+/* card container dropdown */
+
+#debit-pay-wrapper:hover, #paypal-pay-wrapper:hover{
+    background-color: rgb(190, 188, 188);
+    cursor: pointer;
+    font-weight: 600;
+}
+.dropdown-content{
+    display: none;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 20px;
+}
+.show-card{
+    display: block;
+}
+
+
+
+/* credit card container main */
+
+#pSign1, #pSign2, #pSign3, #pSign4, #pSign5{
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.fa-circle-check{
+    background-color: white;
+    color: green;
+}
+
+#allDetailsDone, #validShow{
+    color: green;
+}

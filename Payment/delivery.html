@@ -1,0 +1,150 @@
+<!-- Welcome to payment page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarFech - p1 Delivery Page</title>
+    <link rel="stylesheet" href="./CSS/delivery.css">
+    <link rel="stylesheet" href="./CSS/navbarFooter.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
+
+    <script
+      src="https://kit.fontawesome.com/57a88932f2.js"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+</head>
+<body>
+    <!--part 1- Payment navbar exported  -->
+    <nav id="pNavbar">
+
+    </nav>
+    <div id="needHelpDropDwn" class="dropped">
+        <!-- exported -->
+    </div>
+
+    <!--part 2= User detail fields  -->
+    <div id="payContainer">
+        <div id="pFields">
+            <!-- progress baar -->
+            <i class="fa-solid fa-box-archive"></i>
+            <div id="progressbar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-step progress-step-active" data-title="Delivery"></div>
+                <div class="progress-step" data-title="Payment"></div>
+                <div class="progress-step" data-title="Review"></div>
+            </div>
+
+            <!-- Input Groups -->
+            <div id="userDetails">
+                <form id="pform">
+                    <h2>Add your delivery address</h2>
+                    <p>* Required fields</p>
+                    <div id="nameSec">
+                        <div>
+                            <label for="pName">First Name *</label>
+                            <input type="text" id="pName" class="next" required tabindex="1">
+                            <div id="signal1"></div>
+                        </div>
+                        <div>
+                            <label for="lastName">Last name *</label>
+                            <input type="text" id="lastName" class="next" required tabindex="2">
+                            <div id="signal2"></div>
+                        </div>
+                    </div>
+                    <div id="pCountries">
+                        <label for="pCountry">Country / region *</label>
+                        <select id="pCountry" name="countries" class="next" required tabindex="3"></select>
+                        <div id="signal3"></div>
+                    </div>
+                    <div id="pAddress">
+                        <label for=".add1">Address *</label>
+                        <div>
+                            <input type="text"  id="addL1" class="next" required tabindex="4"> 
+                            <div id="signal4"></div>
+                        </div>
+                        <div>
+                            <input type="text" id="addL2" class="next" tabindex="5" > 
+                        </div>
+                        <div id="add-line">
+                            <div>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <span> Add another line</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="city-state">
+                        <div>
+                            <label for="pCity">City *</label>
+                            <input type="text" id="pCity" class="next" required tabindex="6">
+                            <div id="signal5"></div>
+                        </div>
+                        <div>
+                            <label for="pState">State</label>
+                            <input type="text" id="pState" class="next" required tabindex="7">
+                            <div id="signal6"></div>
+                        </div>
+                    </div>
+                    <div id="zip-phone">
+                        <div>
+                            <label for="pZip">Postal or zip code *</label>
+                            <input type="number" id="pZip" class="next" required tabindex="8">
+                            <div id="signal7"></div>
+                        </div>
+                        <div>
+                            <label for="pPhone">Phone *</label>
+                            <input type="tel" id="pPhone" class="next" required tabindex="9">
+                            <div id="signal8"></div>
+                        </div>
+                    </div>
+                    <div id="checkbox">
+                        <label for="chkInput">
+                            <input type="checkbox" id="chkInput" name="Billing Address" tabindex="10">Use as billing address
+                        </label>
+                    </div>
+                    <div id="allDone">
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- summary -->
+        <div id="pSummary">
+            <h2>Summary</h2>
+
+            <div id="pSBox">
+                <!-- Exported -->
+            </div>
+            <div id="btnBox">
+                <button id="save-btn">Save and Continue</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footNeedHelpDropDwn">
+        <!-- exported -->
+    </div>
+    <!--Payment footer == exported  -->
+    <footer id="pFooter">
+        
+    </footer>
+</body>
+</html>
+
+<script type="module" src="./JavaScripts/delivery.js"></script>
+
+  
+<script type="text/javascript" src="./JavaScripts/JQFunctions.js"></script>
+
