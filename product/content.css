@@ -1,0 +1,320 @@
+#bigBox{
+    width: 90%;
+    height: auto;
+   
+    margin: auto;
+    display: flex
+}
+#firstPart{
+    width: 60%;
+    height: auto;
+   
+}
+#secondPart{
+    width: 40%;
+    height: auto;
+    
+}
+#imageSection{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 10px;
+}
+
+.imageIcon>img{
+    width: 100%;
+    height: auto
+}
+
+#imageBottom{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,auto);
+    gap: 10px;
+    margin-top: 10px;
+    
+}
+
+
+.imageIcon2>img{
+    width: 100%;
+    height: 350px;
+}
+#head>h2{
+    margin-left: 10px;
+}
+#head>h2+p{
+    margin-left: 10px;
+    margin-top: -15px;
+    color: grey;
+    font-size: 20px;
+}
+#head>p+p{
+    margin-left: 10px;
+    color: grey;
+}
+#head>a{
+    float: right;
+    color: black;
+}
+#bigButton{
+    height: 40px;
+    width: 90%;
+    margin-left: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid black;
+}
+#bigButton:hover{
+    cursor: pointer;
+}
+#bigButton>p{
+    float: left;
+   font-size: 18px;
+   margin-top: 8px;
+}
+#selectId{
+    float: right;
+    margin-top: 10px;
+    border: none;
+    
+
+}
+
+#addToBagBtn{
+    width: 60%;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+}
+#addToBagBtn:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+}
+
+#addToBagBtn>p{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    color: white;
+}  
+#wishListBtn{
+   width: 30%; 
+   height: 40px;
+   border-radius: 5px;
+   border: none;
+   border: 1px solid black;
+} 
+#deleveryTime{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#symbolPart{
+    display: flex;
+    margin-left: 70px;
+   
+}
+#symbolPart>p{
+    margin-left: 10px;
+    font-size: 15px;
+    color: grey;
+
+}
+#symbolPart>p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+#heading{
+    display: flex;
+    margin-left: 70px;
+    border-bottom: 1px solid;
+    width: 90%;
+    margin-bottom: 15px;
+}
+#heading>h4{
+    margin-right: 45px;
+    color: grey;
+    
+   
+}
+#heading>h4:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#middleBox{
+    width: 90%; 
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,500px);
+    margin: auto;
+    gap: 20px;
+    
+}
+#blum>h3+p{
+    margin-top: -20px;
+    font-size: 18px;
+    color: grey;
+}
+
+#heghlights>p{
+    font-size: 18px;
+}
+#unorder{
+    margin-left: -20px;
+}
+#combo{
+    margin-top: 65px;
+   
+}
+
+h3{
+    color: grey;
+    font-size: 15px;
+}
+a{
+    color: black;
+}
+#middleImage>img{
+    width: 100%;
+    height: 100%;
+}
+#items>p{
+    text-align: center;
+}
+#bottomPart{
+    width: 90%;
+   
+    
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,600px);
+    gap: 10px;
+    
+    
+}
+#firstImage>img{
+    width: 100%;
+    height: 100%;
+}
+
+.imageSection>img{
+    width: 100%;
+    height:300px ;
+}
+.addToBagBtn1{
+    width: 90%;
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+}
+.addToBagBtn1:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+}
+
+.addToBagBtn1>p{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+    color: white;
+} 
+#recomment{
+    display: flex;
+    
+} 
+#recomment>h2{
+    margin-left: 70px;
+    font-size: 20px;
+}
+#recomment>h2+button{
+    
+margin: auto;
+width: 10%;
+height: 30px;
+border-radius: 5px;
+border: none;
+border: 1px solid black;
+}
+
+#picture{
+    width: 90%;
+ display:flex ;
+    margin: auto;
+   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,350px);
+    gap: 10px;
+}
+
+
+.smallPic>img{
+    width: 100%;
+    height: 100%;
+}
+.smallPic>img+img{
+
+   
+    margin-top: -400px;
+}
+.myClass{
+    margin-top: -200px;
+}
+
+.smallPic1>img:hover{
+    cursor: pointer;
+    
+}
+#textPart{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,150px);
+    gap: 10px;
+    
+}
+
+#recent>h2{
+    margin-left: 70px;
+    font-size: 18px;
+}
+#bottomPic{
+    width: 90%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,350px);
+    gap: 10px;
+
+}
+
+.avatar>img{
+    width: 100%;
+    height: 100%;
+}
+
+#bottomText{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,150px);
+    gap: 10px;
+}
