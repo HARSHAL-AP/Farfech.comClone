@@ -208,14 +208,14 @@ while(start<2){
 
 //footer dynamic name addition
 
-let footerName = JSON.parse(localStorage.getItem("userData"))
+// let footerName = JSON.parse(localStorage.getItem("userData"))
 
-//test case
-// let footerName ={
-//     userNameSign: "Dhananjay Kandalkar"
-// }
+// test case
+let footerName ={
+    userNameSign: "Dhananjay Kandalkar"
+}
 
-document.querySelector("#dynaUser").innerText=(footerName.name);
+document.querySelector("#dynaUser").innerText=(footerName.userNameSign);
 
 
 

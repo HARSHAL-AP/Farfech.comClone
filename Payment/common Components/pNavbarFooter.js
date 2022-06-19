@@ -17,7 +17,7 @@ let pNavbar = () => {
 
 let pFooter=()=>{
     return `<div id="pUserName">
-        <h4 id="dynaUser">User name (dynamic)</h4>
+        <h4 id="dynaUser"></h4>
         <a href="../LoginPage/index.html">Sign out</a>
     </div>
     <div id="pHelp">

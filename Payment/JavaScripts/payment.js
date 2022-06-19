@@ -473,14 +473,14 @@ document.querySelector("#uContApp").append(h4b);
 
 // footer dynamic name addition
 
-let footerName = JSON.parse(localStorage.getItem("userData"))
+// let footerName = JSON.parse(localStorage.getItem("userData"))
 
 //test case
-// let footerName ={
-//     userNameSign: "Dhananjay Kandalkar"
-// }
+let footerName ={
+    userNameSign: "Dhananjay Kandalkar"
+}
 
-document.querySelector("#dynaUser").innerText=(footerName.name);
+document.querySelector("#dynaUser").innerText=(footerName.userNameSign);
 
 
 // switch to homepage from navbar farfetch logo
