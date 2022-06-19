@@ -35,16 +35,16 @@ function navbar(){
     </div>
     </div>
     <div id="subnav">
-    <p> <a href="">Sale</a> </p>
-    <p> <a href="">New In</a> </p>
-    <p> <a href="">Shop By</a> </p>
-    <p> <a href="">brands</a> </p>
-    <p> <a href="">Clothing</a> </p>
-    <p> <a href="">Shoes</a> </p>
-    <p> <a href="">Bags</a> </p>
-    <p> <a href="">Accessories</a> </p>
-    <p> <a href="">Jewelry</a> </p>
-    <p> <a href="">Pre-owned</a> </p>
+    <p> <a href="./PROJECT/navOptions/sale.html">Sale</a> </p>
+    <p> <a href="./PROJECT/navOptions/newIn.html">New In</a> </p>
+    <p> <a href="./PROJECT/navOptions/shopBy.html">Shop By</a> </p>
+    <p> <a href="./PROJECT/navOptions/brands.html">brands</a> </p>
+    <p> <a href="./PROJECT/navOptions/clothing.html">Clothing</a> </p>
+    <p> <a href="./PROJECT/navOptions/shoes.html">Shoes</a> </p>
+    <p> <a href="./PROJECT/navOptions/bags.html">Bags</a> </p>
+    <p> <a href="./PROJECT/navOptions/accessories.html">Accessories</a> </p>
+    <p> <a href="./PROJECT/navOptions/jewelry.html">Jewelry</a> </p>
+    <p> <a href="./PROJECT/navOptions/preOwned.html">Pre-owned</a> </p>
 </div>
     <div id="myModal" class="modal">
     <!-- Modal content -->
