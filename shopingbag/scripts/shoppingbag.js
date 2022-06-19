@@ -2,38 +2,38 @@ import { navbar, fotter } from "/components/navbar.js";
 document.getElementById("navbar").innerHTML = navbar();
 document.getElementById("bot").innerHTML = fotter();
 
-// let arr= JSON.parse(localStorage.getItem("arr")) || [];
+let arr= JSON.parse(localStorage.getItem("arr")) || [];
 
-let arr = [
-  {
-    id:18,
-    image:"https://cdn-images.farfetch-contents.com/18/39/13/94/18391394_39818609_1000.jpg",
-    img2:"https://cdn-images.farfetch-contents.com/18/39/13/94/18391394_39818608_1000.jpg", 
-    brand:"Oscar de la Renta",
-    name:"floral-print halterneck dress",
-    type: "newIn",
-    price: 4820,
-    qty:1
+// let arr = [
+//   {
+//     id:18,
+//     image:"https://cdn-images.farfetch-contents.com/18/39/13/94/18391394_39818609_1000.jpg",
+//     img2:"https://cdn-images.farfetch-contents.com/18/39/13/94/18391394_39818608_1000.jpg", 
+//     brand:"Oscar de la Renta",
+//     name:"floral-print halterneck dress",
+//     type: "newIn",
+//     price: 4820,
+//     qty:1
 
-},
-{
-  id:19,
-  image:"https://cdn-images.farfetch-contents.com/18/03/77/01/18037701_39577867_1000.jpg",
-  img2:"https://cdn-images.farfetch-contents.com/18/03/77/01/18037701_39580129_1000.jpg", 
-  brand:"GIABORGHINI",
-  name:"Gia slingback satin sandals",
-  type: "newIn",
-  price: 3120,
-  qty: 1,
+// },
+// {
+//   id:19,
+//   image:"https://cdn-images.farfetch-contents.com/18/03/77/01/18037701_39577867_1000.jpg",
+//   img2:"https://cdn-images.farfetch-contents.com/18/03/77/01/18037701_39580129_1000.jpg", 
+//   brand:"GIABORGHINI",
+//   name:"Gia slingback satin sandals",
+//   type: "newIn",
+//   price: 3120,
+//   qty: 1,
 
-},
+// },
 
 
   
-];
-localStorage.setItem("arr", JSON.stringify(arr));
+// ];
+// localStorage.setItem("arr", JSON.stringify(arr));
 
-console.log(arr.length);
+// console.log(arr.length);
 
 let container = document.getElementById("payout_box");
 if (arr.length >= 1) {
