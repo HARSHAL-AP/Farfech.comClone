@@ -1,101 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <div id="fonts"></div>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ACCESSORIES</title>
-   
-    <link rel="stylesheet" href="optionsStyle.css">
-    <link rel="stylesheet" href="sidebar.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@400;600&family=Open+Sans:wght@300&family=Plus+Jakarta+Sans&family=Poppins&family=Roboto+Slab:wght@300&family=Roboto:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/8f1241067b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/login.css" />
+
+    <link rel="stylesheet" href="optionsStyle.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+  </head>
+  <body>
     <div id="saleLine">
-        <a href="/">Sale</a>
-        <a href="/">Up to 50% off</a>
-        <a href="/">Shop the world's best designers</a>
-        </div>
-    <div id="header" style="position : sticky; top : 0px;">
+      <a href="/">Sale</a>
+      <a href="/">Up to 50% off</a>
+      <a href="/">Shop the world's best designers</a>
     </div>
-    
-    <h2 style="text-align: center;font-size: 20px;">Womens Home > Accessories</h2>
-    <h1 style="text-align: center;font-size: 30px; margin-top: 10px;">MORDERN ACCESSORIES FOR WOMENS</h1>
+
+    <div id="navbar"></div>
+
+    <h2 style="text-align: center; font-size: 20px">
+      Womens Home > Accessories
+    </h2>
+    <h1 style="text-align: center; font-size: 30px; margin-top: 10px">
+      MORDERN ACCESSORIES FOR WOMENS
+    </h1>
     <nav class="side">
-        <ul>
-         <li><a href="#" class="one">Catagories
-             <span>
-                 <img src="../down.png"/>
-             </span>
-         </a>
-             <ul class="one-one">
-                 <li><a href="#">Belts</a></li>
-                 <li><a href="#">Cap</a></li>
-                 <li><a href="#">Braces</a></li>
-                 <li><a href="#">Face Mask</a></li>
-                 <li><a href="#">Glasses</a></li>
-                 <li><a href="#">Bridal Accessories</a></li>
-                 <li><a href="#">Gloves</a></li>
-                 <li><a href="#">Hair Accessories</a></li>
-                 <li><a href="#">Make Up Bags</a></li>
-             </ul>
-         </li>
-         <li><a href="#" class="two">Brands
+      <ul>
+        <li>
+          <a href="#" class="one"
+            >Catagories
             <span>
-                <img src="../down.png"/>
+              <img src="../down.png" />
             </span>
-         </a>   
-         </li>
-         <li><a href="#" class="two">Size
+          </a>
+          <ul class="one-one">
+            <li><a href="#">Belts</a></li>
+            <li><a href="#">Cap</a></li>
+            <li><a href="#">Braces</a></li>
+            <li><a href="#">Face Mask</a></li>
+            <li><a href="#">Glasses</a></li>
+            <li><a href="#">Bridal Accessories</a></li>
+            <li><a href="#">Gloves</a></li>
+            <li><a href="#">Hair Accessories</a></li>
+            <li><a href="#">Make Up Bags</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="two"
+            >Brands
             <span>
-                <img src="../down.png"/>
+              <img src="../down.png" />
             </span>
-         </a>   
-         </li>
-         <li><a href="#" class="three">Colors
+          </a>
+        </li>
+        <li>
+          <a href="#" class="two"
+            >Size
             <span>
-                <img src="../down.png"/>
+              <img src="../down.png" />
             </span>
-         </a>   
-         </li>
-        </ul>
-     </nav>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="three"
+            >Colors
+            <span>
+              <img src="../down.png" />
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <select id="sort">
-        <option>Sort By </option>
-        <option value="OP">Our Pics</option>
-        <option value="NF">Newest first</option>
-        <option value="HTL">Price: high to low</option>
-        <option value="LTH">Price: low to high</option>
-        <option value="DHTL">Discount: high to low</option>
+      <option>Sort By</option>
+      <option value="OP">Our Pics</option>
+      <option value="NF">Newest first</option>
+      <option value="HTL">Price: high to low</option>
+      <option value="LTH">Price: low to high</option>
+      <option value="DHTL">Discount: high to low</option>
     </select>
-    
+
     <div id="container"></div>
-</body>
+    <div id="bot"></div>
+  </body>
 </html>
+<script src="data1.js"></script>
+<script src="/script/login.js"></script>
+<script type="module">
+  import { fotter, navbarForproductpages } from "/components/navbar.js";
+  document.getElementById("bot").innerHTML = fotter();
+  document.getElementById("navbar").innerHTML = navbarForproductpages();
+
+  var modal = document.getElementById("myModal");
+
+  var btn = document.getElementById("searchbutn");
+  var span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function () {
+    modal.style.display = "block";
+  };
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+  window.onscroll = function () {
+    myFunction();
+  };
+
+  var header = document.getElementById("navbar");
+
+  var sticky = header.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script>
 
 <script type="module">
-    import { header,fonts } from '../components/header.js'
-    import { append } from '../components/append.js'
-let head = document.getElementById('header')
-head.innerHTML = header();
-let font = document.getElementById('fonts')
-font.innerHTML = fonts();
+  import { header, fonts } from "../components/header.js";
+  import { append } from "../components/append.js";
+  let head = document.getElementById("header");
+  head.innerHTML = header();
+  let font = document.getElementById("fonts");
+  font.innerHTML = fonts();
 
-let products = JSON.parse(localStorage.getItem('products'))
-console.log(products)
+  let products = JSON.parse(localStorage.getItem("products"));
+  console.log(products);
 
-products =  products.filter((el)=>{
-    if(el.type == 'accessories'){
-        return el
+  products = products.filter((el) => {
+    if (el.type == "accessories") {
+      return el;
     }
-})
-console.log(products)
+  });
+  console.log(products);
 
-let container = document.getElementById('container')
-append(products,container)
-
+  let container = document.getElementById("container");
+  append(products, container);
 </script>
 
 <!-- 

@@ -23,7 +23,6 @@
   padding-top: 24px;
   padding-bottom: 0px;
   z-index: 1;
- 
 }
 #navhead {
   height: 45px;
@@ -48,10 +47,6 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-}
-#pagees>p>a{
-  text-decoration: none;
-  color: black;
 }
 
 #mainlogo {
@@ -88,10 +83,15 @@
   height: 50px;
   width: 95%;
   margin: auto;
-
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+#navsearch > button {
+  height: 44px;
+  width: 100px;
+  margin-left: 15px;
+  background-color: #000000;
 }
 .modal {
   display: none; /* Hidden by default */
@@ -161,7 +161,12 @@
   height: 44px;
   width: 100%;
 }
-#navsearch > div {
+#dropboxes {
+  height: 50px;
+  width: 71%;
+}
+
+#mmp {
   height: 50px;
   width: 28%;
   position: relative;
@@ -266,13 +271,180 @@
 #bottom > div > p {
   font-size: 13px;
 }
-#subnav{
-  display: flex;
-  gap: 30px;
-  margin-left: 20px;
-  
+
+/* navbar popup for category */
+
+.subnav {
+  float: left;
+  overflow: hidden;
 }
-#subnav>p>a{
+
+.subnav .subnavbtn {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: rgb(50, 50, 50);
+  padding: 16px 14px;
+  background-color: #fff;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 450px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.subnav-content a {
+  float: left;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  color: black;
+}
+
+.subnav-content a:hover {
+  color: rgb(6, 6, 6);
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+.catlistbox {
+  height: 100%;
+  width: 94%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.catlistbox > div {
+  height: 100%;
+  width: 33.33%;
+
+  display: flex;
+}
+.catlist {
+  height: 100%;
+  width: 50%;
+}
+
+.catlist > ul {
+  margin-top: 15px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.catlist > li {
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+#saletab {
+  color: red;
+}
+#catimg {
+  display: block;
+}
+#catimg > img {
+  width: 100%;
+  height: 80%;
+}
+#catimg > p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+#catimg > h5 {
+  color: red;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+#catimg > a {
+  font-size: 14px;
+  margin-top: 10px;
+}
+#catimg2,
+#catimg3,
+#catimg4,
+#catimg5 {
+  display: block;
+}
+#catimg2 > img,
+#catimg3 > img,
+#catimg4 > img,
+#catimg5 > img {
+  width: 100%;
+  height: 80%;
+}
+#catimg2 > p,
+#catimg3 > p,
+#catimg4 > p,
+#catimg5 > p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+#catimg2 > h5,
+#catimg3 > h5,
+#catimg4 > h5,
+#catimg5 > h5 {
+  font-weight: lighter;
+  margin-top: 10px;
+}
+#catimg2 > a,
+#catimg3 > a,
+#catimg4 > a,
+#catimg5 > a {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#catimg6,
+#catimg7,
+#catimg8,
+#catimg9,
+#catimg10 {
+  display: block;
+}
+#catimg6 > img,
+#catimg7 > img,
+#catimg8 > img,
+#catimg9 > img,
+#catimg10 > img {
+  width: 100%;
+  height: 80%;
+}
+#catimg6 > p,
+#catimg7 > p,
+#catimg8 > p,
+#catimg9 > p,
+#catimg10 > p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+#catimg6 > h5,
+#catimg7 > h5,
+#catimg8 > h5,
+#catimg9 > h5,
+#catimg10 > h5 {
+  font-weight: lighter;
+  margin-top: 10px;
+}
+#catimg6 > a,
+#catimg7 > a,
+#catimg8 > a,
+#catimg9 > a,
+#catimg10 > a {
+  font-size: 14px;
+  margin-top: 10px;
+}
+#pagees > p > a {
+  text-decoration: none;
+  color: #000000;
+}
+.subnavbtn > a {
+  text-decoration: none;
+  color: #000000;
 }

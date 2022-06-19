@@ -35,6 +35,10 @@
   color: #fff;
   top: 40%;
 }
+#pagedirect > div > div > h3 > a {
+  text-decoration: none;
+  color: #fff;
+}
 .pageselections {
   height: 230px;
   width: 95%;
