@@ -1,6 +1,6 @@
 import { navbar, fotter } from "/components/navbar.js";
 document.getElementById("navbar").innerHTML = navbar();
-document.getElementById("fotter").innerHTML = fotter();
+document.getElementById("bot").innerHTML = fotter();
 
 let arr= JSON.parse(localStorage.getItem("arr")) || [];
 
@@ -209,7 +209,7 @@ class="flagIcon" data-testid="itemGroupHeader-countryFlag"></span>
     <p class="_b4693b">new items to shop</p>
 </div>
 <div class="_46a0d2" data-testid="newIn-images"><a 
-        href="#" data-testid="newIn-imageLink">
+        href="/PROJECT/womens.html" data-testid="newIn-imageLink">
         <picture>
             <source media=""
                 srcset="https://cdn-images.farfetch-contents.com/18/03/61/45/18036145_40111502_170.jpg"><img

@@ -86,7 +86,7 @@ function navbar(){
       <span class="material-symbols-outlined"> favorite </span>
     </button>
     <button>
-      <span class="material-symbols-outlined"> shopping_bag </span>
+     <a href="/shopingbag/shoppingbag.html"><span class="material-symbols-outlined"> shopping_bag </span></a> 
     </button>
   </div>
   </div>
