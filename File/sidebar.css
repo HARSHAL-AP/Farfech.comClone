@@ -1,0 +1,74 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            color:black ;
+            user-select: none;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .side{
+            position: fixed;
+            background-color:white;
+            width: 300px;
+            left: 0;
+            height: 100%;
+        }
+        nav ul{
+            background-color:white;
+            height: 100%;
+            width: 100%;
+            list-style: none;
+        }
+        nav ul li{
+            line-height: 60px;
+            border-bottom: 1px solid gray;
+        }
+        nav ul li a{
+            position: relative;
+            color: black;
+            text-decoration: none;
+            font-size: 30px;
+            padding-left: 40px;
+            font-weight: 500;
+            display: block;
+            width: 100%;
+            border-left: 3px solid transparent;
+        }
+        nav ul li a:hover{
+            color: grey;
+            background: rgb(218, 217, 217);
+            border-left-color: aliceblue;
+        }
+        nav ul ul{
+            position: static;
+        
+        }
+        nav ul ul li{
+            line-height: 42px;
+            border-bottom: none;
+        }
+        nav ul ul li a{
+            font-size: 26px;
+            color: black;
+            padding-left: 80px;
+        }
+        nav ul li a span{
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            transition: transform 0.4s;
+        }
+        nav ul li a span img{
+            height: 10%;
+            width: 10%;
+            margin-top: 20px;
+            margin-left: 90%;
+        }
+        nav ul li a:hover span{
+            transform: translateY(-50%);
+        }
+        nav ul .one-one.one{
+            display: block;
+        }
