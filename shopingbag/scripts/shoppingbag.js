@@ -256,7 +256,7 @@ function summaryBox(mrp, dCharge) {
             </table>
             <div class="" data-testid="checkoutProvidersContainer"><a
                     class=" _737011"
-                    href="delivery.html"
+                    href="/Payment/delivery.html"
                     id="BasketGoToCheckout"><span>Go To
                         Checkout</span><svg data-component="Icon" class="_3dc882">
                         
