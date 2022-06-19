@@ -147,6 +147,77 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// algorithm for validating creditCad digits
+function validateCarddigits (digits){
+    let digStore = "";
+    for (let i = 0; i<digits.length; i++){
+        if (digits[i]===" "){
+            continue;
+        }
+        else {
+            digStore=digStore+digits[i];
+        }
+    }
+    let digNum = +digStore;
+    let sum =0;
+
+    while(digNum>0){
+        let a = digNum%10;
+        digNum = Math.floor(digNum/10);
+
+        let b = (digNum%10)*2;
+        digNum = Math.floor(digNum/10);
+
+        if (b>9){
+            b-=9;
+        }
+
+        sum+=a+b;
+    }
+    return sum%10==0;
+}
+
+
+// algorithm for validating card date
+function validatingDates(dateS){
+    // some testcases stored for compare
+    let dateArr=new Array ("11/22","01/23","02/23","03/23","04/23","05/23","01/24","02/24","03/24","04/24","05/24","04/26");
+    let i=0;
+    let flag=false;
+    while (i<dateArr.length){
+        if (dateArr[i]==dateS){
+            flag =true;
+        }
+        i++;
+    }
+    if(flag){
+        return true;
+    }
+    return false;
+};
+
+
+
+// Algorithm for validating cvv
+function validatingCVV(cvvS){
+    let numArr=new Array ("123","988","456","789","234","567","890","345","678","456","789");
+    let i=0;
+    let flag=false;
+    while (i<numArr.length){
+        if (numArr[i]==cvvS){
+            flag =true;
+        }
+        i++;
+    }
+    if(flag){
+        return true;
+    }
+    return false;
+};
+
+
+
+
 //card overall functionality
 
 //** reuired fileds functions
@@ -170,37 +241,69 @@ cardHolder.onkeypress=(ele)=>{
     }
 }
 cardDigits.onkeypress=(ele)=>{
-    if (ele.key=="Enter" && cardDigits.value!=="" && cardDigits.value.length>=16){
+    let cardOutput;
+    if (ele.key=="Enter"){
+        cardOutput = validateCarddigits (cardDigits.value);
+    }
+    if (ele.key=="Enter" && cardDigits.value!=="" && cardDigits.value.length>=16 &&  cardOutput===true){
         document.querySelector("#pSign2").innerHTML="";
-
+        let span =  document.createElement("span");
+        span.style.color="green";
+        span.innerText="Valid";
+        
         let i = document.createElement("i");
         i.setAttribute("class", "fa-solid fa-circle-check");
-        document.querySelector("#pSign2").append(i);
+        document.querySelector("#pSign2").append(span,i);
     }
-    else {
+    else if (cardOutput===false){
+        document.querySelector("#pSign2").innerText="*Not valid Card Numbers!";
+    }
+    else{
         document.querySelector("#pSign2").innerText="*Required! please put 16 digits";
     }
 }
 cardExpDate.onkeypress=(ele)=>{
-
-    if (ele.key=="Enter" && cardExpDate.value!==""){
+    let expDateCheck;
+    if (ele.key=="Enter"){
+        expDateCheck = validatingDates(cardExpDate.value);
+    }
+    if (ele.key=="Enter" && cardExpDate.value!=="" && expDateCheck===true){
         document.querySelector("#pSign3").innerHTML="";
+
+        let span =  document.createElement("span");
+        span.style.color="green";
+        span.innerText="Valid";
 
         let i = document.createElement("i");
         i.setAttribute("class", "fa-solid fa-circle-check");
         document.querySelector("#pSign3").append(i);
+    }
+    else if (expDateCheck===false){
+        document.querySelector("#pSign3").innerText="*Invalid Date!";
     }
     else {
         document.querySelector("#pSign3").innerText="*Required";
     }
 }
 cardCcv.onkeypress=(ele)=>{
-    if (ele.key=="Enter" && cardCcv.value!==""){
+    let checkCVV;
+    if (ele.key=="Enter"){
+        checkCVV= validatingCVV(cardCcv.value);
+        console.log(checkCVV);
+    }
+    if (ele.key=="Enter" && cardCcv.value!=="" && checkCVV===true){
         document.querySelector("#pSign4").innerHTML="";
+
+        let span =  document.createElement("span");
+        span.style.color="green";
+        span.innerText="Valid";
 
         let i = document.createElement("i");
         i.setAttribute("class", "fa-solid fa-circle-check");
-        document.querySelector("#pSign4").append(i);
+        document.querySelector("#pSign4").append(span, i);
+    }
+    else if (checkCVV===false){
+        document.querySelector("#pSign4").innerText="*Not valid CVV!";
     }
     else {
         document.querySelector("#pSign4").innerText="*Required";
@@ -211,7 +314,6 @@ let yesGo =false;
 saveCard.onclick=()=>{
     if (saveCard.checked){
         // document.querySelector("#pSign5").innerHTML="";
-
         let i = document.createElement("i");
         i.setAttribute("class", "fa-solid fa-circle-check");
         document.querySelector("#pSign5").append(i);
