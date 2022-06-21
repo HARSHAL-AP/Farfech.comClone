@@ -19,7 +19,7 @@ Look out our website:- https://illustrious-crostata-a644a9.netlify.app</h4>
 
 <h3>Connect with authors</h3>
 <li>Harshal Apsunde :- Homepage,Navbar & Footer page with Loginpage style part </li>
-<li>Rohini Nimaje & Vijay Yadav :- Womans Page and its all functions </li>
+<li>Rohini Nimje & Vijay Yadav :- Womans Page and its all functions </li>
 <li>MD Shariq :- Product page ,signup and registerpage functionality</li>
 <li>Sahdev Roy :- cart page with all functionality  </li>
 <li>Dhananjay Kandalkar:- Payement page with all functionality </li>
