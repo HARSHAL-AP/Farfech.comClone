@@ -52,26 +52,61 @@
 ![Signup-Login](https://user-images.githubusercontent.com/97023360/195294917-d3f4f60b-9ef9-48ae-ae2b-909a23d7f5a4.png)
 
 <br>
+<br>
+<br>
 
 ![Product page -1](https://user-images.githubusercontent.com/97023360/195296466-1bebeb54-0657-46a8-be30-2f7592ef73bc.png)
+
+<br>
+<br>
+<br>
+
 ![Product page -2](https://user-images.githubusercontent.com/97023360/195296495-5a4e9d2b-2831-46f5-a0c3-14477f392d4d.png)
+
+<br>
+<br>
+<br>
+
 ![Product details -1](https://user-images.githubusercontent.com/97023360/195296551-8750f744-fd7f-4e95-83f4-3893974b063e.png)
+
+<br>
+<br>
+<br>
+
 ![Product details -2](https://user-images.githubusercontent.com/97023360/195296580-43c15d63-92e0-406f-8e2e-c5da5321d2fa.png)
 
+<br>
+<br>
 <br>
 
 ![Add to cart (1308)](https://user-images.githubusercontent.com/97023360/195296995-5305154c-0363-4d6d-9ae3-a67f6c7e0f00.png)
 
 <br>
+<br>
+<br>
 
 ![Address page](https://user-images.githubusercontent.com/97023360/195297468-5dbedbaa-76a6-4b74-a804-41932cd64daa.png)
+
+<br>
+<br>
+<br>
+
 ![Payment page](https://user-images.githubusercontent.com/97023360/195297469-d8ce5131-2ad9-42ab-bf72-f214f173cf00.png)
+
+<br>
+<br>
+<br>
+
 ![Review page](https://user-images.githubusercontent.com/97023360/195297520-56b6518f-ab73-479c-ba34-45c25f7ed44b.png)
 
+<br>
+<br>
 <br>
 
 ![Common Footer ](https://user-images.githubusercontent.com/97023360/195298212-083163c3-3261-444b-9555-87ae5711964c.png)
 
+<br>
+<br>
 <br>
 
 ## Connect with authors
